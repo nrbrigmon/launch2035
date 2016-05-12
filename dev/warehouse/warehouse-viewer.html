@@ -1,0 +1,31 @@
+<div class="file-type-filter-group bg-info col-xs-12">
+  <div class="filter-group-a col-xs-12 col-sm-5">
+    <p>Search: <input type="text" #filenameFilter (keyup)="0" /> </p>
+  </div>
+  <div class="filter-group-b col-xs-12 col-sm-7">
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'all'" (click)="fileSelection('all')">All</button>
+        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'shp'"  (click)="fileSelection('shp')">Shapefiles</button>
+        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Reports, Tables, and Docs</button>
+        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
+    </div>
+  </div>
+</div>
+<div class="col-xs-12" *ngIf=(geography)>
+  <p *ngIf="filenameFilter.value.length >= 1" >Searching Term: <b>{{filenameFilter.value}}</b></p>
+  <ul class="data-columns">
+    <li *ngFor="let file of geography | fileNamePipe:filenameFilter.value | fileTypePipe:_selection">
+       <div class="media btn btn-default btn-block" >
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" src='{{file.icon}}'  alt="{{file.icon}}">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{ file.name }}</h4>
+          {{file.link}} | {{file.date}}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

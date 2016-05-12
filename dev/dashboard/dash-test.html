@@ -1,0 +1,146 @@
+
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li [class.active]="cObj == 'Region'" (click)="setCategory('Region')"><a>Regional Overview</a></li>
+            <li [class.active]="cObj == 'Limestone'" (click)="setCategory('Limestone')" makeActive><a>Limestone</a></li>
+            <li [class.active]="cObj == 'Madison'" (click)="setCategory('Madison')" makeActive><a>Madison</a></li>
+            <li [class.active]="cObj == 'Morgan'" (click)="setCategory('Morgan')"><a>Morgan</a></li>
+          </ul>
+          <hr />
+          <h4>Committee Tracking</h4>
+          <ul class="nav nav-sidebar">
+            <li [class.active]="cObj == 'Land Use'" (click)="setCategory('Land Use')"><a>Land Use</a></li>
+            <li [class.active]="cObj == 'Workforce'" (click)="setCategory('Workforce')"><a>Workforce</a></li>
+            <li [class.active]="cObj == 'Entrepreneurship'" (click)="setCategory('Entrepreneurship')"><a>Entrepreneurship</a></li>
+          </ul>
+          <hr />
+          <h4>Goal Tracking</h4>
+          <ul class="nav nav-sidebar">
+            <li [class.active]="cObj == 'Goal 1'" (click)="setCategory('Goal 1')"><a>Goal 1</a></li>
+            <li [class.active]="cObj == 'Goal 2'" (click)="setCategory('Goal 2')"><a>Goal 2</a></li>
+            <li [class.active]="cObj == 'Goal 3'" (click)="setCategory('Goal 3')"><a>Goal 3</a></li>
+          </ul>
+        </div>
+        <div [ngSwitch]="category" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+          <h2 class="chosen-category-header">{{category}}</h2>
+          <template [ngSwitchWhen]="'Region'" >
+            <div class="placeholders">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-1></chart-component-1>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-2></chart-component-2>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-3></chart-component-3>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-4></chart-component-4>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </div>
+            <div class="placeholders">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-1></chart-component-1>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-2></chart-component-2>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-3></chart-component-3>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-4></chart-component-4>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </div>
+          </template>
+          <template [ngSwitchWhen]="'Limestone'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+            <div class="placeholders">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-5></chart-component-5>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-2></chart-component-2>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-6></chart-component-6>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-4></chart-component-4>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </div>
+          </template>
+          <template [ngSwitchWhen]="'Madison'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+            <div class="placeholders">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-6></chart-component-6>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-2></chart-component-2>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-1></chart-component-1>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-4></chart-component-4>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </div>
+          </template>
+          <template [ngSwitchWhen]="'Morgan'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+            <div class="placeholders">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-1></chart-component-1>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-5></chart-component-5>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-6></chart-component-6>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
+                <chart-component-4></chart-component-4>
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </div>
+          </template>
+        </div> <!--template divs -->
+      </div>

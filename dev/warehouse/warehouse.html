@@ -1,0 +1,26 @@
+<div class="row top-row module">
+  <div class="col-xs-12 col-sm-12 col-md-8 ">
+    <h2>Welcome to the Warehouse.</h2>
+    <p>Select a county or the entire region to browse data</p>
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" [class.active]="cObj == 'reg'" (click)="onGeoSelect('reg')"> Regional</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" [class.active]="cObj == 'mad'" (click)="onGeoSelect('mad')"> Madison</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" [class.active]="cObj == 'mor'" (click)="onGeoSelect('mor')"> Morgan</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary" [class.active]="cObj == 'lim'" (click)="onGeoSelect('lim')"> Limestone</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 logo" style="text-align: center">
+    <img style="height: 127px;" src="./assets/img/tricounty.png">
+  </div>
+</div>
+<div class="row">
+  <dataset-viewer-component [geography]="selectedGeography"></dataset-viewer-component>
+</div>

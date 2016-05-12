@@ -1,0 +1,49 @@
+import {Component} from '@angular/core';
+import {CHART_DIRECTIVES} from 'angular2-highcharts';
+
+@Component({
+  selector:'chart-component-3',
+    styles: [`
+      chart {
+        display: block;
+      }
+  `],
+  template: `
+        <chart [options]="options" (load)="saveChart($event.context)">
+          <series (hide)="onSeriesHide($event.context)">
+            <point (select)="onPointSelect($event.context)"></point>
+          </series>
+        </chart>
+  `,
+  directives: [CHART_DIRECTIVES]
+})
+
+export class ChartComponent3 {
+  options: Object;
+  chart: Object;
+  constructor() {
+        this.options = {
+            title : { text : 'Goal 3' },
+            chart: {type: 'bar'},
+            series: [{
+                name: 's1',
+                data: [1, 0, 4]
+            }, {
+                name: 's2',
+                data: [5, 7, 3]
+            }, {
+                name: 's3',
+                data: [9, 7, 1]
+            }]
+        };
+    }
+    saveChart(chart) {
+      this.chart = chart;
+    }
+    onPointSelect(point) {
+      alert(`${point.y} is selected`);
+    }
+    onSeriesHide(series) {
+      alert(`${series.name} is selected`);
+    }
+}
