@@ -7,7 +7,7 @@ import {FileNamePipe} from './fileNameFilter.pipe';
   selector:'dataset-viewer-component',
   styleUrls: ['./dev/warehouse/warehouse.css'],
   templateUrl: './dev/warehouse/warehouse-viewer.html',
-  inputs: ['geography'],
+  inputs: ['geography', 'searchInitiated'],
   pipes: [FileNamePipe, FileTypePipe]
 })
 
@@ -17,7 +17,6 @@ export class DatasetViewerComponent {
   bObj:string = '';
 
   fileSelection(s:string){
-    console.log(s);
     this._selection = s;
     this.bObj = s;
   }

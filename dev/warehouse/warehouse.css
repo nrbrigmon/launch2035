@@ -7,7 +7,10 @@
   padding: 5px 15px;
   margin: 0px 25px;
 }
-
+hr{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 .data-columns {
   margin-top: 20px;
   list-style-type: none;
@@ -32,32 +35,41 @@
   width:auto;
 }
 .file-type-filter-group{
-  padding: 10px 0px 10px;
   text-align: center;
-  border: 1px solid #bbb;
 }
 .file-type-filter {
   margin: -2.5px;
 }
 .top-row{
   margin-top: 25px;
+  text-align: center;
+}
+.bottom-row {
+  padding: 25px;
 }
 .logo{
   display:none;
 }
-
-.filter-group-a{
-  text-align: center;
+.btn-group-justified{
+    padding-top: 10px;
 }
-
+.search-term{
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px;
+  font-style: italic;
+  font-size: 12px;
+  color: #666666;
+}
+.input-group{
+    width: 400px;
+    margin: 0 auto;
+}
+.file-buttons{
+  padding: 10px;
+}
 @media (min-width: 768px) {
-  .filter-group-a{
-    text-align: right;
-  }
-  .filter-group-b{
-    text-align: left;
-  }
-    padding: 10px 0px 0px;
+
 
 }
 

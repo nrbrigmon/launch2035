@@ -1,18 +1,22 @@
-<div class="file-type-filter-group bg-info col-xs-12">
-  <div class="filter-group-a col-xs-12 col-sm-5">
-    <p>Search: <input type="text" #filenameFilter (keyup)="0" /> </p>
-  </div>
-  <div class="filter-group-b col-xs-12 col-sm-7">
-    <div class="btn-group" role="group" aria-label="...">
-        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'all'" (click)="fileSelection('all')">All</button>
-        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'shp'"  (click)="fileSelection('shp')">Shapefiles</button>
-        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Reports, Tables, and Docs</button>
-        <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
+<div class="file-type-filter-group col-xs-12">
+  <div class="filter-group col-xs-12">
+    <hr width="50%"/>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Filter by:</span>
+      <input type="text" #filenameFilter (keyup)="0"  class="form-control" placeholder="..." aria-describedby="basic-addon1"/>
     </div>
+    <div class="btn-group file-buttons" role="group" aria-label="...">
+      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'all'" (click)="fileSelection('all')">All</button>
+      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'shp'"  (click)="fileSelection('shp')">Shapefiles</button>
+      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Reports, Tables, and Docs</button>
+      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
+    </div>
+
+    <hr width="50%"/>
   </div>
 </div>
 <div class="col-xs-12" *ngIf=(geography)>
-  <p *ngIf="filenameFilter.value.length >= 1" >Searching Term: <b>{{filenameFilter.value}}</b></p>
+  <p *ngIf="filenameFilter.value.length >= 1" class="search-term">Filtering by <b>{{filenameFilter.value}}</b></p>
   <ul class="data-columns">
     <li *ngFor="let file of geography | fileNamePipe:filenameFilter.value | fileTypePipe:_selection">
        <div class="media btn btn-default btn-block" >

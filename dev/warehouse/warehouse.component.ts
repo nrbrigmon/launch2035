@@ -14,10 +14,12 @@ import {MyHighMapsComponent} from './highmaps.component';
 export class WarehouseComponent {
   selectedGeography: Array<RegionalDataset>;
   cObj:string = '';
+  searchInitiated: boolean = false;
 
   constructor(private _datasetService : DatasetService){ }
 
   onGeoSelect(geography:string){
+    this.searchInitiated = true;
     this.cObj = geography;
     this.selectedGeography = this._datasetService.getDataByGeography(geography);
     // console.log(this.selectedGeography);
