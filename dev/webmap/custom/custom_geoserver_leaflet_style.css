@@ -505,23 +505,36 @@ INSIDE IFRAME - LAUNCH 2035 HaCK
  *  7. Responsive Design
 /* ------------------------------------------------------------------------- */
 @media screen and (max-width: 900px){
+    .visible-layers{
+        /*padding: 0px 10px 10px 0px;*/
+        /*width: auto;*/
+    }
+
+
+}
+@media screen and (max-width: 600px){
+    .welcome-tag{
+        font-size: 17px;
+    }
+    #description-box h3{
+        font-size: 17px;
+    }
+    .add-label-items{
+        /*top:495px;*/
+        display:none;
+    }
+    #legendWrapper h4{
+        font-size: 13px;
+    }
     #legendWrapper, #legendWrapper *, .select2-results__option,
     .tableTitles, div.info.visible-layers * {
         font-size: 10px;
     }
-    .visible-layers{
-        padding: 0px 10px 10px 0px;
-        width: auto;
 
-    }
-
-}
-@media screen and (max-width: 600px){
-
-    div#legendWrapper{
+   /* div#legendWrapper{
         top: 1px;
         left: 1px;
-    }
+    }*/
     .visible-layers{
         display:none;
     }

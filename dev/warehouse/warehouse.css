@@ -20,6 +20,7 @@ hr{
   -webkit-column-gap: 10px;
   column-count: 1;
   column-gap: 10px;
+  padding-left: 0px;
 }
 
 .data-columns li{
@@ -67,14 +68,19 @@ hr{
 }
 .file-buttons{
   padding: 10px;
+    width: 340px;
 }
+.btn-primary{
+  font-size:12px;
+}
+.file-type-filter-group input{
+    width: 260px;
+  }
 @media (min-width: 768px) {
 
-
-}
-
-@media (min-width: 768px) {
-
+    .btn-primary{
+      font-size:18px;
+    }
     .data-columns {
       -moz-column-count: 2;
       -moz-column-gap: 10px;
@@ -87,6 +93,10 @@ hr{
     .file-type-filter-group{
       padding-bottom: 0px;
     }
+
+    .file-type-filter-group input{
+        width: 100%;
+      }
   }
 
 @media screen and (min-width: 992px) {

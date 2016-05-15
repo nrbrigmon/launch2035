@@ -24,7 +24,25 @@
 .sidebar {
   display: none;
 }
+.top-nav-col{
+  list-style: none;
+  padding-left: 0px;
+}
+.top-nav-col li{
+    cursor: pointer;
+}
+.top-navbar{
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
 @media (min-width: 768px) {
+  .top-navbar{
+    display: none;
+  }
   .sidebar {
     position: fixed;
     top: 51px;
@@ -36,7 +54,7 @@
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
   }
 }
 
@@ -45,6 +63,9 @@
   margin-right: -21px; /* 20px padding + 1px border */
   margin-bottom: 20px;
   margin-left: -20px;
+}
+.nav-sidebar li{
+    cursor: pointer;
 }
 .nav-sidebar > li > a {
   padding-right: 20px;

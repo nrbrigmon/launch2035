@@ -413,6 +413,8 @@ var globalhead, globalfoot;
         $("div#legendWrapper").css("padding","13px");
         $("div#legendWrapper").css("width","auto");
         $("div#legendWrapper").css("min-width","0px");
+        $("div#legendWrapper").css("background","none");
+        $("div#legendWrapper").css("box-shadow","none");
     });
 
     $("#showLegend").click(function(event) {
@@ -427,6 +429,9 @@ var globalhead, globalfoot;
         $("div#legendWrapper").css("padding","3rem");
         $("div#legendWrapper").css("width","35%");
         $("div#legendWrapper").css("min-width","313px");
+        $("div#legendWrapper.info").css("background","rgba(0, 0, 0, 0.65)");
+        $("div#legendWrapper").css("box-shadow","0 0 15px rgba(0,0,0,0.2)");
+    
     });
     var cityLabels, streetsLabels;
     $("input#addCityLabels").change(function(){

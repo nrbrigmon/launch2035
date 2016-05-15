@@ -23,6 +23,34 @@
           </ul>
         </div>
         <div [ngSwitch]="category" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+          <div class="top-navbar col-xs-12">
+            <div class="col-xs-4"> 
+              <h4>Geography</h4>
+              <ul class="top-nav-col">
+                <li [class.active]="cObj == 'Region'" (click)="setCategory('Region')"><a>Regional Overview</a></li>
+                <li [class.active]="cObj == 'Limestone'" (click)="setCategory('Limestone')" makeActive><a>Limestone</a></li>
+                <li [class.active]="cObj == 'Madison'" (click)="setCategory('Madison')" makeActive><a>Madison</a></li>
+                <li [class.active]="cObj == 'Morgan'" (click)="setCategory('Morgan')"><a>Morgan</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4"> 
+              <h4>Committee Tracking</h4>
+              <ul class="top-nav-col">
+                <li [class.active]="cObj == 'Land Use'" (click)="setCategory('Land Use')"><a>Land Use</a></li>
+                <li [class.active]="cObj == 'Workforce'" (click)="setCategory('Workforce')"><a>Workforce</a></li>
+                <li [class.active]="cObj == 'Entrepreneurship'" (click)="setCategory('Entrepreneurship')"><a>Entrepreneurship</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-4"> 
+              <h4>Goal Tracking</h4>
+              <ul class="top-nav-col">
+                <li [class.active]="cObj == 'Goal 1'" (click)="setCategory('Goal 1')"><a>Goal 1</a></li>
+                <li [class.active]="cObj == 'Goal 2'" (click)="setCategory('Goal 2')"><a>Goal 2</a></li>
+                <li [class.active]="cObj == 'Goal 3'" (click)="setCategory('Goal 3')"><a>Goal 3</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-xs-12">
           <h2 class="chosen-category-header">{{category}}</h2>
           <template [ngSwitchWhen]="'Region'" >
             <div class="placeholders">
@@ -142,5 +170,6 @@
               </div>
             </div>
           </template>
+          </div>
         </div> <!--template divs -->
       </div>
