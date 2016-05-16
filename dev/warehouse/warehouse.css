@@ -45,10 +45,10 @@ hr{
 .top-row{
   margin-top: 25px;
   text-align: center;
+  border-bottom: 1px #ccc solid;
 }
 .bottom-row {
   padding: 25px;
-  padding-top: 0px;
 }
 .logo{
   display:none;
@@ -65,19 +65,14 @@ hr{
   color: #666666;
 }
 .input-group{
-    width: 400px;
     margin: 0 auto;
 }
 .file-buttons{
   padding: 10px;
-    width: 340px;
 }
 .btn-primary{
   font-size:12px;
 }
-.file-type-filter-group input{
-    width: 260px;
-  }
 @media (min-width: 768px) {
 
     .btn-primary{

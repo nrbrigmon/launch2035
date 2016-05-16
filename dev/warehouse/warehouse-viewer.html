@@ -1,13 +1,21 @@
-<div class="file-type-filter-group col-xs-12">
+<div class="file-type-filter-group col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-xs-12">
     <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">Filter by:</span>
       <input type="text" #filenameFilter (keyup)="0"  class="form-control" placeholder="..." aria-describedby="basic-addon1"/>
     </div>
-    <div class="btn-group file-buttons" role="group" aria-label="...">
-      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'all'" (click)="fileSelection('all')">All</button>
-      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'shp'"  (click)="fileSelection('shp')">Shapefiles</button>
-      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Reports, Tables, and Docs</button>
-      <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
+    <div class="btn-group btn-group-justified file-buttons" role="group" aria-label="...">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-sm btn-launch btn-launch-info file-type-filter" [class.active]="bObj == 'all'" (click)="fileSelection('all')">All</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'shp'"  (click)="fileSelection('shp')">Shapefiles</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Documents</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
+      </div>
     </div>
 </div>
 <div class="col-xs-12" *ngIf=(geography)>
