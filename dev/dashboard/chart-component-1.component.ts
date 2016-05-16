@@ -24,6 +24,7 @@ export class ChartComponent1 {
   constructor() {
         this.options = {
             title : { text : 'Indicator A' },
+            colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             series: [{
                 name: 's1',
                 data: [2,3,5,8,13],
