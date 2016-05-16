@@ -5,11 +5,13 @@ import {ChartComponent3} from './chart-component-3.component';
 import {ChartComponent4} from './chart-component-4.component';
 import {ChartComponent5} from './chart-component-5.component';
 import {ChartComponent6} from './chart-component-6.component';
+import {ChartComponent7} from './chart-component-7.component';
+import {ChartComponent8} from './chart-component-8.component';
 
 @Component({
   templateUrl:'./dev/dashboard/dash-test.html',
   styleUrls: ['./dev/dashboard/dash-test.css'],
-  directives: [ChartComponent1, ChartComponent2, ChartComponent3, ChartComponent4, ChartComponent5, ChartComponent6]
+  directives: [ChartComponent1, ChartComponent2, ChartComponent3, ChartComponent4, ChartComponent5, ChartComponent6, ChartComponent7, ChartComponent8]
 })
 
 export class DashboardComponent {

@@ -31,6 +31,8 @@
     "./dev/dashboard/chart-component-4.component.ts",
     "./dev/dashboard/chart-component-5.component.ts",
     "./dev/dashboard/chart-component-6.component.ts",
+    "./dev/dashboard/chart-component-7.component.ts",
+    "./dev/dashboard/chart-component-8.component.ts",
     "./dev/dashboard/dashboard.component.ts",
     "./dev/dashboard/make-active.directive.ts",
     "./dev/dashboard/set-active.directive.ts",

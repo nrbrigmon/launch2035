@@ -50,7 +50,7 @@
 .top-navbar{
     z-index: 1000;
     display: block;
-    padding: 20px 50px;
+    padding: 20px 0px;
     overflow-x: hidden;
     background-color: #222222;
     border-bottom: 1px solid #eee;
@@ -66,32 +66,17 @@
 .top-navbar div:nth-child(2){
   padding-right:0px;
   padding-left:0px;
+  text-align: center;
 }
 
 .top-navbar div:last-child{
   padding-left:0px;
-}
-@media (min-width: 768px) {
-  .top-navbar{
-    display: none;
-  }
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #222222;
-  }
+  text-align: right;
 }
 
 /* Sidebar navigation */
 .nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
+  margin-right: -21px;
   margin-bottom: 20px;
   margin-left: -20px;
 }
@@ -127,12 +112,7 @@
 .main {
   padding: 20px;
 }
-@media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
+
 .main .page-header {
   margin-top: 0;
 }
@@ -162,4 +142,27 @@
 }
 .chosen-category-header{
     text-align: center;
+}
+
+@media (min-width: 768px) {
+  .top-navbar{
+    display: none;
+    padding: 20px 0px;
+  }
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #222222;
+  }
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
