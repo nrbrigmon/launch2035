@@ -7,6 +7,7 @@
   padding: 5px 15px;
   margin: 0px 25px;
 }
+
 hr{
   margin-top: 5px;
   margin-bottom: 10px;
@@ -47,6 +48,7 @@ hr{
 }
 .bottom-row {
   padding: 25px;
+  padding-top: 0px;
 }
 .logo{
   display:none;

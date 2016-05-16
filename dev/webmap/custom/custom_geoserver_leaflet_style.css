@@ -12,11 +12,23 @@ Version: 1.0.0
  * 5. Tabular Styles
  * 6. Animation
  * 7. Responsive Design
+
+$red-theme: #e84a36;
+$blue-theme: #005C83;
+$red-theme: #E84A36; 
+$green-theme: #A3D65C;
+$light-grey-theme:#4C4C4C;
+$dark-grey-theme: #222222;
+
 */
 
 /* ------------------------------------------------------------------------- *
  *  1. Leaflet + Map Styles
 /* ------------------------------------------------------------------------- */
+body{
+    background-color: #222222;
+    color: #ffffff;
+}
 body, #map {
     height: 100%;
     width: 100%;
@@ -338,6 +350,7 @@ li#legend_option:hover{
     padding-left: 15px;
 }
 .add-label-items{
+    color: #222222;
     font-size: 9px;
     position: absolute;
     top: 505px;

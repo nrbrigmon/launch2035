@@ -1,5 +1,4 @@
 <div class="file-type-filter-group col-xs-12">
-    <hr width="50%"/>
     <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">Filter by:</span>
       <input type="text" #filenameFilter (keyup)="0"  class="form-control" placeholder="..." aria-describedby="basic-addon1"/>
@@ -10,8 +9,6 @@
       <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Reports, Tables, and Docs</button>
       <button type="button" class="btn btn-sm btn-default file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
     </div>
-
-    <hr width="50%"/>
 </div>
 <div class="col-xs-12" *ngIf=(geography)>
   <p *ngIf="filenameFilter.value.length >= 1" class="search-term">Filtering by <b>{{filenameFilter.value}}</b></p>
