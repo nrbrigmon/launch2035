@@ -1,5 +1,5 @@
 $blue-theme: #005C83;
-$red-theme: #E84A36; 
+$red-theme: #E84A36;
 $green-theme: #A3D65C;
 $light-grey-theme:#4C4C4C;
 $dark-grey-theme: #222222;
@@ -30,7 +30,7 @@ ul.nav{
 .nav > li > a:hover,
 .nav > li > a:focus {
   color: $red-theme !important;
-  background-color: none !important; 
+  background-color: none !important;
 }
 
 #main-navbar .navbar-nav > li > a.router-link-active {
@@ -64,7 +64,7 @@ ul.nav{
     text-transform: none;
     display: inline-block;
     box-sizing: border-box;
-    padding: 0 12px; 
+    padding: 0 12px;
     vertical-align: middle;
     line-height: 30px;
     min-height: 30px;

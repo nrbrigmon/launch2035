@@ -213,7 +213,7 @@ var globalhead, globalfoot;
         "Regional_Ecoregions_05162016": "<div class='polygon-group' name='Regional_Ecoregions_05162016'>"+
             "<div class='polygon polygon-ecoregions'></div>Ecoregions" + "</div>",
         "TriCountyCensusPlaces" : "<div class='polygon-group' name='TriCountyCensusPlaces'>"+
-            "<div class='polygon polygon-cities'></div>Post Secondary Institutions</div>",
+            "<div class='polygon polygon-cities'></div>US Census Places</div>",
         "TAZ_Pop_Growth" : "<div class='polygon-group' name='TAZ_Pop_Growth'>" +
             "<div class='polygon polygon-popgrowthA'></div>Extreme Decline = Less than -5%<br>" +
             "<div class='polygon polygon-popgrowthB'></div>Slight Decline = -5% to 0%<br>" +

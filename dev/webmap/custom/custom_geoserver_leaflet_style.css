@@ -26,8 +26,8 @@ $dark-grey-theme: #222222;
  *  1. Leaflet + Map Styles
 /* ------------------------------------------------------------------------- */
 body{
-    background-color: #222222;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #222222;
 }
 body, #map {
     height: 100%;

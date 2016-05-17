@@ -2,14 +2,22 @@ import {Component} from '@angular/core';
 
 @Component({
   template: `
-    <iframe id="iframeId" scrolling="no" frameborder="no" src="/dev/webmap/geoservermap.html"></iframe>
+    <div id="wrap">
+      <iframe id="iframeId" scrolling="no" frameborder="no" src="/dev/webmap/geoservermap.html"></iframe>
+    </div>
   `,
   styles:[`
     #iframeId{
-      margin:0 auto;
       display: block;
       width: 100%;
       height: 1000px;
+    }
+    #wrap {
+      position:fixed;
+      left:0;
+      width:100%;
+      top:0;
+      height:100%;
     }
   `]
 })
