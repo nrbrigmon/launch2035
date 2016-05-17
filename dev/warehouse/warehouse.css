@@ -36,6 +36,14 @@ hr{
   height: 40px;
   width:auto;
 }
+.data-columns > li > div{
+  border-radius: 0px;
+  border: 1px solid #ccc;
+}
+.data-columns > li > div:hover {
+    background-color: none !important;
+    box-shadow: 1px 1px 10px -3px;
+}
 .file-type-filter-group{
   text-align: center;
 }

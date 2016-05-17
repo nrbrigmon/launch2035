@@ -22,7 +22,7 @@
   <p *ngIf="filenameFilter.value.length >= 1" class="search-term">Filtering by <b>{{filenameFilter.value}}</b></p>
   <ul class="data-columns">
     <li *ngFor="let file of geography | fileNamePipe:filenameFilter.value | fileTypePipe:_selection">
-       <div class="media btn btn-default btn-block" >
+       <div class="media btn btn-block" >
         <div class="media-left">
           <a href="#">
             <img class="media-object" src='{{file.icon}}'  alt="{{file.icon}}">

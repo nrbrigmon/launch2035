@@ -84,8 +84,9 @@ ul.nav{
     color: #ffffff;
     background-color: rgb(58, 136, 54);
 }
-.btn-launch-primary:hover{
-  color: $red-theme;
+.btn-launch-primary:hover,
+.btn-launch-primary:focus{
+  color: #dddddd;
 }
 .btn-launch-primary{
     color: #ffffff;
@@ -104,8 +105,9 @@ ul.nav{
     line-height: 15px;
     padding: 10px 7px;
 }
-.btn-launch-info:hover{
-  color: $red-theme;
+.btn-launch-info:hover,
+.btn-launch-info:focus{
+  color: #dddddd;
 }
 .btn-launch-info:focus,
 .btn-launch-info.active{

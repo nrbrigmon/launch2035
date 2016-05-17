@@ -15,7 +15,7 @@ Version: 1.0.0
 
 $red-theme: #e84a36;
 $blue-theme: #005C83;
-$red-theme: #E84A36; 
+$red-theme: #E84A36;
 $green-theme: #A3D65C;
 $light-grey-theme:#4C4C4C;
 $dark-grey-theme: #222222;
@@ -152,7 +152,7 @@ ul#legend{
 }
 
 #legendWrapper h4{
-    color: #5BC0DE;
+    color: #A3D65C;
     margin: 0;
 }
 #legendWrapper p{
@@ -163,10 +163,8 @@ ul#legend{
     height: 115%;
 }
 #legendWrapper ul{
-    /*font-size: 1.2rem;*/
     color: white;
     height: 115%;
-    margin-left: 2rem;
     margin-bottom: -6px;
     margin-top: 12px;
 }
@@ -257,7 +255,7 @@ li#legend_option:hover{
     padding: 0px 3px;
     color: #656565;
     border-color: #656565;
-    background-color: rgba(0,0,0,0);
+    background-color: #565655;
 }
 
 /**************************
@@ -361,7 +359,9 @@ li#legend_option:hover{
 .add-label-items div{
     display:inline;
 }
-
+.select2-results__options{
+  color:#333333;
+}
 
 /* ------------------------------------------------------------------------- *
  *  4. Navigation Bar
@@ -465,7 +465,7 @@ li#legend_option:hover{
 }
 
 .spinner > div {
-  background-color: #5BC0DE;
+  background-color: #E84A36;
   height: 75%;
   margin: 0px 2px 0px 2px;
   width: 6px;
