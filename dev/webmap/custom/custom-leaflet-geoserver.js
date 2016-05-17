@@ -80,8 +80,8 @@ var globalhead, globalfoot;
 
     // /* Setup global functions */
     var addChosenLayer = function(value) {
-        var newLayer = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/sonoma-landuse/wms", {
-            layers: 'sonoma-landuse:' + value + '',
+        var newLayer = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/alabama/wms", {
+            layers: 'alabama:' + value + '',
             format: 'image/png',
             transparent: true,
             version: '1.1.0',
@@ -126,7 +126,7 @@ var globalhead, globalfoot;
         tableHTML = "<table id='" + value + "' class='display' cellspacing='0' width='100%'><thead><tr id='header-row'></tr></thead><tfoot><tr id='footer-row'></tr></tfoot></table>";
         $(".table-results-box").prepend(tableHTML);
 
-        var urlGetCSV = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wfs?SERVICE=wfs&VERSION=1.0.0&REQUEST=getfeature&TYPENAME=sonoma-landuse:" + value + "&outputformat=csv";
+        var urlGetCSV = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wfs?SERVICE=wfs&VERSION=1.0.0&REQUEST=getfeature&TYPENAME=alabama:" + value + "&outputformat=csv";
         //possible workaround
         ///change output to json
         ///use python or jscript lib to convert json to csv output
@@ -138,7 +138,7 @@ var globalhead, globalfoot;
         //load tabular data
         console.log('running sql...');
         tableDataKeys = [];
-        var urlColumnNames = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wfs?SERVICE=wfs&VERSION=1.0.0&REQUEST=describefeaturetype&TYPENAME=sonoma-landuse:" + value + "&outputformat=application/json";
+        var urlColumnNames = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wfs?SERVICE=wfs&VERSION=1.0.0&REQUEST=describefeaturetype&TYPENAME=alabama:" + value + "&outputformat=application/json";
         var tableResponseObject, tableDataRows = [],
             tableDataColumns = [],
             columnName;
@@ -168,11 +168,11 @@ var globalhead, globalfoot;
                 }
             });
             //now populate table
-            var urlTableData = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wfs?SERVICE=wfs&VERSION=1.0.0&REQUEST=getfeature&TYPENAME=sonoma-landuse:" + value + "&outputformat=application/json&maxFeatures=1000&startIndex=1";
+            var urlTableData = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wfs?SERVICE=wfs&VERSION=1.0.0&REQUEST=getfeature&TYPENAME=alabama:" + value + "&outputformat=application/json&maxFeatures=1000&startIndex=1";
 
             $.get(urlTableData, function(responseText) {
                 console.log('...got');
-                //console.log(responseText);
+                console.log(responseText);
                 for (item in responseText.features) {
                     //console.log(responseText.features[item].properties);
                     tableDataRows.push(responseText.features[item].properties)
@@ -206,45 +206,30 @@ var globalhead, globalfoot;
 
     var removeSelection, downloadSelection;
     var legendSymbolLibrary = {
-        "Final_County_Parcels": "<div class='polygon-group' name='Final_County_Parcels'>" +
-            " <div class='polygon polygon-countyparcelsA'></div>Agricultural <br>" +
-            " <div class='polygon polygon-countyparcelsB'></div>Civic/Governmental <br>" +
-            " <div class='polygon polygon-countyparcelsC'></div>Commercial <br>" +
-            " <div class='polygon polygon-countyparcelsD'></div>Industrial <br>" +
-            " <div class='polygon polygon-countyparcelsE'></div>Miscellaneous <br>" +
-            " <div class='polygon polygon-countyparcelsF'></div>No Data <br>" +
-            " <div class='polygon polygon-countyparcelsG'></div>Recreation/Open Space <br>" +
-            " <div class='polygon polygon-countyparcelsH'></div>Residential <br>" + "</div>",
-        "final_selected_distressed_block_groups": "<div class='polygon-group' name='final_selected_distressed_block_groups'>"+
-            "<div class='polygon polygon-distressbg'></div>Distressed Block Groups</div>",
-        "final_poverty_rate_blockgroups": "<div class='polygon-group' name='final_poverty_rate_blockgroups'>"+
-            "<div class='polygon polygon-povertyrateA'></div>Poverty Rate > 17%<br>" +
-            "<div class='polygon polygon-povertyrateB'></div>Poverty Rate > 8%<br>" +
-            "<div class='polygon polygon-povertyrateC'></div>Poverty Rate > 0%<br>" + "</div>",
-        "Post_Secondary_Institutions" : "<div class='polygon-group' name='Post_Secondary_Institutions'>"+
-            "<div class='polygon polygon-postsecondaryedu'></div>Post Secondary Institutions</div>",
-        "CDP_Growth_2010_2014" : "<div class='polygon-group' name='CDP_Growth_2010_2014'>" +
-            "<div class='polygon polygon-cdp-popgrowthA'></div>Extreme Decline = Less than -5%<br>" +
-            "<div class='polygon polygon-cdp-popgrowthB'></div>Slight Decline = -5% to 0%<br>" +
-            "<div class='polygon polygon-cdp-popgrowthC'></div>Slight Growth = 0% to 5%<br>" +
-            "<div class='polygon polygon-cdp-popgrowthD'></div>Extreme Growth = Greater than 5%<br>" + "</div>",
-        "HousingJobsbyZipCode2016": "<div class='polygon-group' name='HousingJobsbyZipCode2016'>" +
-            "<div class='polygon polygon-jobstohousingA'></div>Low<br>" +
-            "<div class='polygon polygon-jobstohousingB'></div>Medium Low<br>" +
-            "<div class='polygon polygon-jobstohousingC'></div>Medium High<br>" +
-            "<div class='polygon polygon-jobstohousingD'></div>High<br>" + "</div>",
-        "Wireless-Consumer-Lines-Final4192016": "<div class='polygon-group' name='Wireless-Consumer-Lines-Final4192016'>"+
-            "<div class='polygon polygon-broadbandConHigh'></div>Faster than 8 Mbps<br>" +
-            "<div class='polygon polygon-broadbandConLow'></div>Slower than 8 Mbps<br>" + "</div>",
-        "Wireless-Business-Lines-Final4192016": "<div class='polygon-group' name='Wireless-Business-Lines-Final4192016'>"+
-            "<div class='polygon polygon-broadbandBizHigh'></div>Faster than 8 Mbps<br>" +
-            "<div class='polygon polygon-broadbandBizLow'></div>Slower than 8 Mbps<br>" + "</div>",
+        "MPO_TAZ_05162016_WGS1984": "<div class='polygon-group' name='MPO_TAZ_05162016_WGS1984'>" +
+            " <div class='polygon polygon-MPOFull'></div>Regional TAZs" + "</div>",
+        "Northern_AL_Watersheds_05162016": "<div class='polygon-group' name='Northern_AL_Watersheds_05162016'>"+
+            "<div class='polygon polygon-watersheds'></div>Watersheds</div>",
+        "Regional_Ecoregions_05162016": "<div class='polygon-group' name='Regional_Ecoregions_05162016'>"+
+            "<div class='polygon polygon-ecoregions'></div>Ecoregions" + "</div>",
+        "TriCountyCensusPlaces" : "<div class='polygon-group' name='TriCountyCensusPlaces'>"+
+            "<div class='polygon polygon-cities'></div>Post Secondary Institutions</div>",
+        "TAZ_Pop_Growth" : "<div class='polygon-group' name='TAZ_Pop_Growth'>" +
+            "<div class='polygon polygon-popgrowthA'></div>Extreme Decline = Less than -5%<br>" +
+            "<div class='polygon polygon-popgrowthB'></div>Slight Decline = -5% to 0%<br>" +
+            "<div class='polygon polygon-popgrowthC'></div>Slight Growth = 0% to 5%<br>" +
+            "<div class='polygon polygon-popgrowthD'></div>Extreme Growth = Greater than 5%<br>" + "</div>",
+        "TAZ_Emp_Growth": "<div class='polygon-group' name='TAZ_Emp_Growth'>" +
+            "<div class='polygon polygon-empgrowthA'></div>Low<br>" +
+            "<div class='polygon polygon-empgrowthB'></div>Medium Low<br>" +
+            "<div class='polygon polygon-empgrowthC'></div>Medium High<br>" +
+            "<div class='polygon polygon-empgrowthD'></div>High<br>" + "</div>"
     };
 
     function updateLegendList(value) {
         $('#legendWrapper').css('height', 'auto');
         //because these layers are dynamic, all the key data will be tied to the DOM
-        var urlGetKML = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wms/kml?layers=sonoma-landuse:" + value + "&mode=download";
+        var urlGetKML = "http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/wms/kml?layers=alabama:" + value + "&mode=download";
 
         var legendText = "<li id='legend_option' name='" + value + "'>" + tableTitle + "<span style='float:right'>" +
             "<a target='_blank' href='"+urlGetKML+"'>" +
@@ -431,15 +416,15 @@ var globalhead, globalfoot;
         $("div#legendWrapper").css("min-width","313px");
         $("div#legendWrapper.info").css("background","rgba(0, 0, 0, 0.65)");
         $("div#legendWrapper").css("box-shadow","0 0 15px rgba(0,0,0,0.2)");
-    
+
     });
     var cityLabels, streetsLabels;
     $("input#addCityLabels").change(function(){
     	var checked = $(this).prop("checked");
     	console.log("this is checked: ", checked);
     	if (checked == true){
-    		cityLabels = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/sonoma-landuse/wms", {
-	            layers: 'sonoma-landuse:CityLabelsOnly',
+    		cityLabels = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/alabama/wms", {
+	            layers: 'alabama:CityLabelsOnly',
 	            format: 'image/png',
 	            transparent: true,
 	            version: '1.1.0',
@@ -455,8 +440,8 @@ var globalhead, globalfoot;
     	var checked = $(this).prop("checked");
     	console.log("this is checked: ", checked);
     	if (checked == true){
-    		streetsLabels = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/sonoma-landuse/wms", {
-	            layers: 'alabama:	TriCountyBoundaries',
+    		streetsLabels = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/alabama/wms", {
+	            layers: 'alabama:	TriCountyRoads',
 	            format: 'image/png',
 	            transparent: true,
 	            version: '1.1.0',

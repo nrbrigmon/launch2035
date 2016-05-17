@@ -225,7 +225,9 @@ li#legend_option{
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-li#legend_option > span{    margin-top: -2px; }
+li#legend_option > span{
+  margin-top: 1px;
+}
 li#legend_option:hover{
     box-shadow: 3px 3px 1px  #000000;
     -webkit-box-shadow: 3px 3px 1px  #000000;
@@ -292,38 +294,23 @@ li#legend_option:hover{
     z-index: 1000;
 }
 
-.polygon-distressbg {background-color: #6B0FB2}
+.polygon-MPOFull {background-color: #feb24c}
 
-.polygon-povertyrateA {background-color: #F03B20}
-.polygon-povertyrateB {background-color: #FEB24C}
-.polygon-povertyrateC {background-color: #FFEDA0}
+.polygon-watersheds{ background-color: #deebf7 }
 
-.polygon-countyparcelsA{ background-color: #055D00 }
-.polygon-countyparcelsB{ background-color: #FF9900 }
-.polygon-countyparcelsC{ background-color: #5CA2D1 }
-.polygon-countyparcelsD{ background-color: #F84F40 }
-.polygon-countyparcelsE{ background-color: #A53ED5 }
-.polygon-countyparcelsF{ background-color: #FFFFFF }
-.polygon-countyparcelsG{ background-color: #229A00 }
-.polygon-countyparcelsH{ background-color: #FFCC00 }
+.polygon-ecoregions{ background-color: #d95f0e }
 
-.polygon-postsecondaryedu{ background-color: #00FF00 }
+.polygon-cities{ background-color: #bcbddc }
 
-.polygon-cdp-popgrowthA{ background-color: #ca0020 } /* redder */
-.polygon-cdp-popgrowthB{ background-color: #f4a582 }
-.polygon-cdp-popgrowthC{ background-color: #92c5de }
-.polygon-cdp-popgrowthD{ background-color: #0571b0 } /* bluer */
+.polygon-popgrowthA{ background-color: #ca0020 } /* redder */
+.polygon-popgrowthB{ background-color: #f4a582 }
+.polygon-popgrowthC{ background-color: #92c5de }
+.polygon-popgrowthD{ background-color: #0571b0 } /* bluer */
 
-.polygon-jobstohousingA{ background-color: #feebe2 } /* lower */
-.polygon-jobstohousingB{ background-color: #fbb4b9 } /**/
-.polygon-jobstohousingC{ background-color: #f768a1 } /**/
-.polygon-jobstohousingD{ background-color: #ae017e } /* higher */
-
-.polygon-broadbandBizHigh{ background-color: #02818a }
-.polygon-broadbandBizLow{ background-color: #d0d1e6 }
-
-.polygon-broadbandConHigh{ background-color: #238b45 }
-.polygon-broadbandConLow{ background-color: #ccece6 }
+.polygon-empgrowthA{ background-color: #feebe2 } /* lower */
+.polygon-empgrowthB{ background-color: #fbb4b9 }
+.polygon-empgrowthC{ background-color: #f768a1 }
+.polygon-empgrowthD{ background-color: #ae017e } /* higher */
 
 .polygon-group{
     border-top: 1px rgba(95, 97, 95, 0.25) solid;
