@@ -36,7 +36,7 @@
     padding: 2px 10px;
 }
 .top-nav-col > li > a:hover{
-    color: #E84A36;    
+    color: #E84A36;
     text-decoration: none;
 }
 
@@ -143,11 +143,22 @@
 .chosen-category-header{
     text-align: center;
 }
-
+.map-row{
+  padding:10px;
+}
+.img-square{
+    box-shadow: 1px 1px 2px 1px #ccc;
+    width:100px;
+    height:100px;
+}
 @media (min-width: 768px) {
   .top-navbar{
     display: none;
     padding: 20px 0px;
+  }
+  .img-square{
+    width:150px;
+    height:150px;
   }
   .sidebar {
     position: fixed;
@@ -164,5 +175,25 @@
   .main {
     padding-right: 40px;
     padding-left: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .map-row{
+    padding:20px;
+  }
+  .img-square{
+    width:200px;
+    height:200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map-row{
+    padding:40px;
+  }
+  .img-square{
+    width:250px;
+    height:250px;
   }
 }

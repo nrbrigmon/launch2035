@@ -72,6 +72,7 @@ body, #map {
 .leaflet-control-layers-base label:last-child{
     padding-bottom: 3px;
 }
+
 .leaflet-popup .table th{
     background: none;
     border: none;
@@ -87,6 +88,7 @@ body, #map {
 }
 .leaflet-popup .table{
     border: none;
+    font-size:12px;
 }
 
 .base-map-title{
@@ -307,10 +309,19 @@ li#legend_option:hover{
 .polygon-popgrowthC{ background-color: #92c5de }
 .polygon-popgrowthD{ background-color: #0571b0 } /* bluer */
 
-.polygon-empgrowthA{ background-color: #feebe2 } /* lower */
-.polygon-empgrowthB{ background-color: #fbb4b9 }
-.polygon-empgrowthC{ background-color: #f768a1 }
-.polygon-empgrowthD{ background-color: #ae017e } /* higher */
+.polygon-ecoregionA{ background-color: #055D00 }
+.polygon-ecoregionB{ background-color: #FF9900 }
+.polygon-ecoregionC{ background-color: #5CA2D1 }
+.polygon-ecoregionD{ background-color: #F84F40 }
+.polygon-ecoregionE{ background-color: #A53ED5 }
+.polygon-ecoregionF{ background-color: #229A00 }
+.polygon-ecoregionG{ background-color: #FFCC00 }
+
+.polygon-empgrowthA{ background-color: #f4a582 } /* lower */
+.polygon-empgrowthB{ background-color: #d1e5f0 }
+.polygon-empgrowthC{ background-color: #92c5de }
+.polygon-empgrowthD{ background-color: #4393c3 }
+.polygon-empgrowthE{ background-color: #2166ac } /* higher */
 
 .polygon-group{
     border-top: 1px rgba(95, 97, 95, 0.25) solid;

@@ -27,24 +27,34 @@ export class ChartComponent12 {
             subtitle : { text : 'Acreage' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['2016']
+                categories: ['Year 1']
             },
             yAxis: {
                 min: 0,
-                title: { text: 'Ratio of Jobs:Housing' }
+                title: { text: 'Acres' },
+                labels: {
+                    formatter: function () {
+                        let num = (this.value).toString();
+                        if (num >= 1000){
+                          return ''+num.slice(0,num.length-3) + 'K';
+                        } else {
+                          return ''+ this.value;
+                        }
+                    }
+                }
             },
             chart: {
                 type: 'column'
             },
             series: [{
                 name: 'Scenario 1',
-                data: [0.7]
+                data: [9728]
             },{
                 name: 'Scenario 2',
-                data: [2.1]
+                data: [9743]
             },{
                 name: 'Scenario 3',
-                data: [3.1]
+                data: [6961]
             }]
         };
     }

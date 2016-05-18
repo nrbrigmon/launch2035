@@ -27,24 +27,24 @@ export class ChartComponent15 {
             subtitle : { text : '' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['2016']
+                categories: ['Year 1']
             },
             yAxis: {
                 min: 0,
-                title: { text: 'Ratio of Jobs:Housing' }
+                title: { text: 'Miles' }
             },
             chart: {
                 type: 'column'
             },
             series: [{
                 name: 'Scenario 1',
-                data: [0.7]
+                data: [383.47]
             },{
                 name: 'Scenario 2',
-                data: [2.1]
+                data: [338.09]
             },{
                 name: 'Scenario 3',
-                data: [3.1]
+                data: [181.4]
             }]
         };
     }

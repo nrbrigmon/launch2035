@@ -27,24 +27,34 @@ export class ChartComponent7 {
             subtitle : { text : 'per Acre per Year' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['2016']
+                categories: ['Year 1']
             },
             yAxis: {
                 min: 0,
-                title: { text: 'US$' }
+                title: { text: '' },
+                labels: {
+                    formatter: function () {
+                        let num = (this.value).toString();
+                        if (num >= 1000){
+                          return '$'+num.slice(0,num.length-3) + 'K';
+                        } else {
+                          return '$'+ this.value;
+                        }
+                    }
+                }
             },
             chart: {
                 type: 'column'
             },
             series: [{
                 name: 'Scenario 1',
-                data: [2990]
+                data: [1669]
             },{
                 name: 'Scenario 2',
-                data: [8150]
+                data: [8901]
             },{
                 name: 'Scenario 3',
-                data: [22000]
+                data: [21735]
             }]
         };
     }

@@ -210,20 +210,24 @@ var globalhead, globalfoot;
             " <div class='polygon polygon-MPOFull'></div>Regional TAZs" + "</div>",
         "Northern_AL_Watersheds_05162016": "<div class='polygon-group' name='Northern_AL_Watersheds_05162016'>"+
             "<div class='polygon polygon-watersheds'></div>Watersheds</div>",
-        "Regional_Ecoregions_05162016": "<div class='polygon-group' name='Regional_Ecoregions_05162016'>"+
-            "<div class='polygon polygon-ecoregions'></div>Ecoregions" + "</div>",
+        "Regional_Ecoregions": "<div class='polygon-group' name='Regional_Ecoregions'>"+
+            "<div class='polygon polygon-ecoregionA'></div>Cumberland Plateau<br>" +
+            "<div class='polygon polygon-ecoregionB'></div>Plateau Escarpment<br>" +
+            "<div class='polygon polygon-ecoregionC'></div>Southern Table Plateaus<br>" +
+            "<div class='polygon polygon-ecoregionD'></div>Dissected Plateau<br>" +
+            "<div class='polygon polygon-ecoregionE'></div>Eastern Highland Rim<br>" +
+            "<div class='polygon polygon-ecoregionF'></div>Outer Nashville Basin<br>" +
+            "<div class='polygon polygon-ecoregionG'></div>Little Mountain<br>" +
+            "</div>",
         "TriCountyCensusPlaces" : "<div class='polygon-group' name='TriCountyCensusPlaces'>"+
             "<div class='polygon polygon-cities'></div>US Census Places</div>",
-        "TAZ_Pop_Growth" : "<div class='polygon-group' name='TAZ_Pop_Growth'>" +
-            "<div class='polygon polygon-popgrowthA'></div>Extreme Decline = Less than -5%<br>" +
-            "<div class='polygon polygon-popgrowthB'></div>Slight Decline = -5% to 0%<br>" +
-            "<div class='polygon polygon-popgrowthC'></div>Slight Growth = 0% to 5%<br>" +
-            "<div class='polygon polygon-popgrowthD'></div>Extreme Growth = Greater than 5%<br>" + "</div>",
-        "TAZ_Emp_Growth": "<div class='polygon-group' name='TAZ_Emp_Growth'>" +
-            "<div class='polygon polygon-empgrowthA'></div>Low<br>" +
-            "<div class='polygon polygon-empgrowthB'></div>Medium Low<br>" +
-            "<div class='polygon polygon-empgrowthC'></div>Medium High<br>" +
-            "<div class='polygon polygon-empgrowthD'></div>High<br>" + "</div>"
+        "MPO_TAZ_Emp_Growth": "<div class='polygon-group' name='MPO_TAZ_Emp_Growth'>" +
+            "<div class='polygon polygon-empgrowthA'></div>Less than 1<br>" +
+            "<div class='polygon polygon-empgrowthB'></div>1 - 500<br>" +
+            "<div class='polygon polygon-empgrowthC'></div>500 - 1000<br>" +
+            "<div class='polygon polygon-empgrowthD'></div>1000 - 5000<br>" +
+            "<div class='polygon polygon-empgrowthE'></div>5000 and Up<br>" +
+            "</div>"
     };
 
     function updateLegendList(value) {
@@ -424,7 +428,7 @@ var globalhead, globalfoot;
     	console.log("this is checked: ", checked);
     	if (checked == true){
     		cityLabels = L.tileLayer.betterWms("http://ec2-52-7-5-52.compute-1.amazonaws.com:80/geoserver/alabama/wms", {
-	            layers: 'alabama:CityLabelsOnly',
+	            layers: 'alabama:City_Labels_Only',
 	            format: 'image/png',
 	            transparent: true,
 	            version: '1.1.0',

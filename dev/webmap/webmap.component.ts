@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
   template: `
     <div id="wrap">
-      <iframe id="iframeId" scrolling="no" frameborder="no" src="/dev/webmap/geoservermap.html"></iframe>
+      <iframe id="iframeId" scrolling="yes" frameborder="no" src="/dev/webmap/geoservermap.html"></iframe>
     </div>
   `,
   styles:[`
