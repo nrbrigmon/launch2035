@@ -53,7 +53,10 @@ hr{
 .top-row{
   margin-top: 25px;
   text-align: center;
-  border-bottom: 1px #ccc solid;
+  color: white;
+  border-right: 10px white solid;
+  background: #222222;
+  border-left: 10px white solid;
 }
 .bottom-row {
   padding: 25px;
@@ -81,6 +84,17 @@ hr{
 .btn-primary{
   font-size:12px;
 }
+div.media{
+  text-align: left;
+  font-size: 9px;
+}
+div.media h4{
+  font-size: 15px;
+}
+div.media-body{
+  white-space: normal;
+}
+
 @media (min-width: 768px) {
 
     .btn-primary{

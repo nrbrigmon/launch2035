@@ -1,6 +1,7 @@
 export interface RegionalDataset {
-    name: string;
-    icon: string;
-    link: string;
-    date: string;
+    Geo: string;
+    Name: string;
+    Description: string;
+    Type: string;
+    Link: string;
 }

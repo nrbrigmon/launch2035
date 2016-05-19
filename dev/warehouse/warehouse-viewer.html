@@ -11,10 +11,10 @@
         <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'shp'"  (click)="fileSelection('shp')">Shapefiles</button>
       </div>
       <div class="btn-group" role="group">
-        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'txt'"  (click)="fileSelection('txt')">Documents</button>
+        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'table'"  (click)="fileSelection('table')">Documents</button>
       </div>
       <div class="btn-group" role="group">
-        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'map'"  (click)="fileSelection('map')">Maps</button>
+        <button type="button" class="btn btn-sm btn-launch btn-launch-info  file-type-filter" [class.active]="bObj == 'report'"  (click)="fileSelection('report')">Maps</button>
       </div>
     </div>
 </div>
@@ -25,12 +25,13 @@
        <div class="media btn btn-block" >
         <div class="media-left">
           <a href="#">
-            <img class="media-object" src='{{file.icon}}'  alt="{{file.icon}}">
+            <img class="media-object" src='./assets/img/{{file.Type}}.png'  alt="{{file.Type}}">
           </a>
         </div>
         <div class="media-body">
-          <h4 class="media-heading">{{ file.name }}</h4>
-          {{file.link}} | {{file.date}}
+          <h4 class="media-heading">{{ file.Name }}</h4>
+          <p>{{file.Description}}</p>
+          <p><a target='_blank' href=''>Download</a></p>
         </div>
       </div>
     </li>
