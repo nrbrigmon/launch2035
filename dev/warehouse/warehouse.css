@@ -94,7 +94,12 @@ div.media h4{
 div.media-body{
   white-space: normal;
 }
-
+.download-help-text{
+    text-align: center;
+    font-size: 11px;
+    margin: 10px;
+    color: #4C4C4C;
+}
 @media (min-width: 768px) {
 
     .btn-primary{

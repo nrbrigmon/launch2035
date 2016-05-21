@@ -20,5 +20,7 @@ export class DatasetViewerComponent {
     this._selection = s;
     this.bObj = s;
   }
-
+  onDownloadClick(){
+    alert("Your download will start shortly... in theory");
+  }
 }
