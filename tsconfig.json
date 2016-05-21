@@ -44,7 +44,6 @@
     "./dev/dashboard/chart-component-8.component.ts",
     "./dev/dashboard/chart-component-9.component.ts",
     "./dev/dashboard/dashboard.component.ts",
-    "./dev/dashboard/make-active.directive.ts",
     "./dev/dashboard/set-active.directive.ts",
     "./dev/home/home.component.ts",
     "./dev/warehouse/dataset-viewer.component.ts",

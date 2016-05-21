@@ -19,21 +19,19 @@
     </div>
 </div>
 <div class="col-xs-12" *ngIf=(geography)>
+  <p>Click any card to download the file</p>
   <p *ngIf="filenameFilter.value.length >= 1" class="search-term">Filtering by <b>{{filenameFilter.value}}</b></p>
   <ul class="data-columns">
-    <li *ngFor="let file of geography | fileNamePipe:filenameFilter.value | fileTypePipe:_selection">
-       <div class="media btn btn-block" >
-        <div class="media-left">
-          <a href="#">
+      <li *ngFor="let file of geography | fileNamePipe:filenameFilter.value | fileTypePipe:_selection">
+         <div class="media btn btn-block" >
+          <div class="media-left">
             <img class="media-object" src='./assets/img/{{file.Type}}.png'  alt="{{file.Type}}">
-          </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">{{ file.Name }}</h4>
+            <p>{{file.Description}}</p>
+          </div>
         </div>
-        <div class="media-body">
-          <h4 class="media-heading">{{ file.Name }}</h4>
-          <p>{{file.Description}}</p>
-          <p><a target='_blank' href=''>Download</a></p>
-        </div>
-      </div>
-    </li>
+      </li>
   </ul>
 </div>

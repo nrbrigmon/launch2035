@@ -23,11 +23,11 @@ export class ChartComponent6 {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'area' },
-            title : { text : 'Goal 3' },
-            colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
+            // chart:  { type: 'area' },
+            // title : { text : 'Goal 3' },
+            // colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             series: [{
-              name: 'S1',
+              mapData: 'S1',
               data: [null, null, null, null, null, 6, 11, 32, 110, 235, 369, 640,
                   1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126,
                   27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342, 26662,

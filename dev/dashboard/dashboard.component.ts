@@ -25,8 +25,8 @@ import {ChartComponent18} from './chart-component-18.component';
 })
 
 export class DashboardComponent {
-  category:string = 'Region';
-  cObj:string = 'Region';
+  category:string = 'Land Use'; //category will help set the HTML template directive
+  cObj:string = 'Land Use';  //cObj will help set an active class for the navbar
   constructor(public el: ElementRef, public renderer: Renderer){
     this.clickedOutside = this.clickedOutside.bind(this);
   }

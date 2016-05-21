@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
     #iframeId{
       display: block;
       width: 100%;
-      height: 1000px;
+      height: 100%;
     }
     #wrap {
       position:fixed;

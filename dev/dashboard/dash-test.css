@@ -40,9 +40,9 @@
     text-decoration: none;
 }
 
-.top-nav-col > .active > a,
-.top-nav-col > .active > a:hover,
-.top-nav-col > .active > a:focus {
+.top-nav-col > li.active > a,
+.top-nav-col > li.active > a:hover,
+.top-nav-col > li.active > a:focus {
   color: #E84A36;
   /*background-color: #005C83;*/
 }
@@ -92,6 +92,7 @@
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
   color: #E84A36;
+  background-color: #EEEEEE;
 }
 
 .nav > li > a:hover,

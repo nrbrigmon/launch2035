@@ -15,7 +15,8 @@ export class FileNamePipe implements PipeTransform {
         } else {
           let resultArray = [];
           for (let item of items) {
-            if (item.name.match('^.*' + args + '.*$')){
+            console.log(item);
+            if (item.Name.match('^.*' + args + '.*$')){
               resultArray.push(item);
             }
           }

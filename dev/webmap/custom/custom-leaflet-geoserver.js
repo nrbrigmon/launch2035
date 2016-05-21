@@ -212,12 +212,13 @@ var globalhead, globalfoot;
             "<div class='polygon polygon-watersheds'></div>Watersheds</div>",
         "Regional_Ecoregions": "<div class='polygon-group' name='Regional_Ecoregions'>"+
             "<div class='polygon polygon-ecoregionA'></div>Cumberland Plateau<br>" +
-            "<div class='polygon polygon-ecoregionB'></div>Plateau Escarpment<br>" +
-            "<div class='polygon polygon-ecoregionC'></div>Southern Table Plateaus<br>" +
             "<div class='polygon polygon-ecoregionD'></div>Dissected Plateau<br>" +
             "<div class='polygon polygon-ecoregionE'></div>Eastern Highland Rim<br>" +
-            "<div class='polygon polygon-ecoregionF'></div>Outer Nashville Basin<br>" +
             "<div class='polygon polygon-ecoregionG'></div>Little Mountain<br>" +
+            "<div class='polygon polygon-ecoregionF'></div>Outer Nashville Basin<br>" +
+            "<div class='polygon polygon-ecoregionB'></div>Plateau Escarpment<br>" +
+            "<div class='polygon polygon-ecoregionC'></div>Southern Table Plateaus<br>" +
+            "<div class='polygon polygon-ecoregionH'></div>Western Highland Rim<br>" +
             "</div>",
         "TriCountyCensusPlaces" : "<div class='polygon-group' name='TriCountyCensusPlaces'>"+
             "<div class='polygon polygon-cities'></div>US Census Places</div>",
