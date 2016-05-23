@@ -12,7 +12,7 @@
           <ul class="nav nav-sidebar">
             <li [class.active]="cObj == 'Land Use'" (click)="setCategory('Land Use')"><a>Land Use</a></li>
             <li [class.active]="cObj == 'Workforce'" (click)="setCategory('Workforce')"><a>Workforce</a></li>
-            <li [class.active]="cObj == 'Entrepreneur'" (click)="setCategory('Entrepreneur')"><a>Entrepreneurship</a></li>
+            <li [class.active]="cObj == 'Entrepreneurship'" (click)="setCategory('Entrepreneurship')"><a>Entrepreneurship</a></li>
           </ul>
           <!-- <hr /> -->
           <!-- <h4>Goal Tracking</h4> -->
@@ -112,7 +112,7 @@
                 <span class="text-muted">Something else</span>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
-                <chart-component-6></chart-component-6>
+                <chart-component-1></chart-component-1>
                 <h4>Label</h4>
                 <span class="text-muted">Something else</span>
               </div>
@@ -160,7 +160,7 @@
                 <span class="text-muted">Something else</span>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
-                <chart-component-6></chart-component-6>
+                <chart-component-1></chart-component-1>
                 <h4>Label</h4>
                 <span class="text-muted">Something else</span>
               </div>
@@ -248,7 +248,7 @@
               </div>
             </div>
           </template>
-          <template [ngSwitchWhen]="'Entrepreneur'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+          <template [ngSwitchWhen]="'Entrepreneurship'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
             <div class="placeholders">
               <div class="col-xs-12 col-md-6 col-lg-4 placeholder">
                 <entre-1></entre-1>
@@ -264,7 +264,7 @@
               </div>
             </div>
           </template>
-          <template [ngSwitchWhen]="'Infrastructure'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+          <!--<template [ngSwitchWhen]="'Infrastructure'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
             <div class="placeholders">
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">
                 <chart-component-15></chart-component-15>

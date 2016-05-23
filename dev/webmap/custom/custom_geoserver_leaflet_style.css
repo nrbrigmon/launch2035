@@ -28,6 +28,7 @@ $dark-grey-theme: #222222;
 body{
     background-color: #ffffff;
     color: #222222;
+    font-family: 'Montserrat', sans-serif;
 }
 body, #map {
     height: 100%;
@@ -49,6 +50,7 @@ body, #map {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 .info h3 {
     margin: 0 0 5px;
@@ -58,6 +60,7 @@ body, #map {
 .leaflet-container {
     background: #fff;
     z-index: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 .leaflet-bottom .leaflet-control-scale {
     margin-left: 50px;
