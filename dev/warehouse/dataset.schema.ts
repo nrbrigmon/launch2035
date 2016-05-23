@@ -4,4 +4,5 @@ export interface RegionalDataset {
     Description: string;
     Type: string;
     Link: string;
+    Year: string;
 }

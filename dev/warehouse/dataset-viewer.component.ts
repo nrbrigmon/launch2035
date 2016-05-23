@@ -13,7 +13,7 @@ import {FileNamePipe} from './fileNameFilter.pipe';
 
 export class DatasetViewerComponent {
   geography = Array<RegionalDataset>();
-  _selection = 'all';
+  _selection = 'All';
   bObj:string = '';
 
   fileSelection(s:string){

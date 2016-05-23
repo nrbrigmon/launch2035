@@ -28,567 +28,236 @@ let regional_dataset: Array<RegionalDataset> = [
   {
     "Geo": "Reg",
     "Name": "US Census Places/Cities",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Shp",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "MPO TAZ Layer Regional",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Shp",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Huntsville MPO TAZ",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Shp",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Decatur MPO TAZ",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Shp",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Watersheds",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Shp",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Ecoregions",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Shp",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "US Census Places/Cities",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Table",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "MPO TAZ Layer Regional",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Table",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Huntsville MPO TAZ",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Table",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Decatur MPO TAZ",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Table",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Watersheds",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Table",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Ecoregions",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Table",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "Huntsville Downtown Master Plan",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "",
+    "Year": "2006"
   },
   {
     "Geo": "Reg",
-    "Name": "Huntsville Land Use By Zoning 2015",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Name": "Huntsville Land Use By Zoning",
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "",
+    "Year": "2015"
   },
   {
     "Geo": "Reg",
-    "Name": "Huntsville Downtown Proposed Zoning Map 2005",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Name": "Huntsville Downtown Proposed Zoning Map",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2005"
   },
   {
     "Geo": "Reg",
     "Name": "Huntsville Area Transportation Study",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "",
+    "Year": "2016"
   },
   {
     "Geo": "Reg",
     "Name": "City of Madison Growth Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "",
+    "Year": "--"
   },
   {
     "Geo": "Reg",
     "Name": "City of Madison Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "--"
   },
   {
     "Geo": "Reg",
     "Name": "Athens Future Land Use Development Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "",
+    "Year": "2013"
   },
   {
     "Geo": "Reg",
     "Name": "Falkville Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2008"
+  },
+  {
+    "Geo": "Reg",
+    "Name": "Athens Citywide Strategic Development Plan",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2013"
+  },
+  {
+    "Geo": "Reg",
+    "Name": "Athens City Center Strategic Development Plan",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2013"
+  },
+  {
+    "Geo": "Reg",
+    "Name": "Athens Ctiywide Future Land Use Plan",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2013"
+  },
+  {
+    "Geo": "Reg",
+    "Name": "Athens Citywide Current Land Use Map",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2013"
+  },
+  {
+    "Geo": "Reg",
+    "Name": "Athens Ciy Center Future Land Use Plan",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2013"
+  },
+  {
+    "Geo": "Reg",
+    "Name": "Huntsville 2040 Trans Plan MPO Map",
+    "Description": "TBD",
+    "Type": "Map",
+    "Link": "",
+    "Year": "2016"
   }
 ];
 let limestone_dataset: Array<RegionalDataset> = [
   {
-    "Geo": "Reg",
-    "Name": "US Census Places/Cities",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "MPO TAZ Layer Regional",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville MPO TAZ",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Decatur MPO TAZ",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Watersheds",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Ecoregions",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "US Census Places/Cities",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "MPO TAZ Layer Regional",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville MPO TAZ",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Decatur MPO TAZ",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Watersheds",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Ecoregions",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Downtown Master Plan",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Land Use By Zoning 2015",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Downtown Proposed Zoning Map 2005",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Area Transportation Study",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "City of Madison Growth Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "City of Madison Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Athens Future Land Use Development Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Falkville Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  }
-];
-let morgan_dataset: Array<RegionalDataset> =[
-  {
-    "Geo": "Reg",
-    "Name": "US Census Places/Cities",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "MPO TAZ Layer Regional",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville MPO TAZ",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Decatur MPO TAZ",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Watersheds",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Ecoregions",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "US Census Places/Cities",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "MPO TAZ Layer Regional",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville MPO TAZ",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Decatur MPO TAZ",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Watersheds",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Ecoregions",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Downtown Master Plan",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Land Use By Zoning 2015",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Downtown Proposed Zoning Map 2005",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Area Transportation Study",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "City of Madison Growth Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "City of Madison Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Athens Future Land Use Development Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Falkville Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  }
-];
+    "Geo": "TBD",
+    "Name": "TBD",
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "TBD",
+    "Year": "2016"
+  }];
+  let morgan_dataset: Array<RegionalDataset> = [
+    {
+      "Geo": "TBD",
+      "Name": "TBD",
+      "Description": "TBD",
+      "Type": "Report",
+      "Link": "TBD",
+      "Year": "2016"
+    }];
 let madison_dataset: Array<RegionalDataset> =[
   {
-    "Geo": "Reg",
-    "Name": "US Census Places/Cities",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "MPO TAZ Layer Regional",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville MPO TAZ",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Decatur MPO TAZ",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Watersheds",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Ecoregions",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "shp",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "US Census Places/Cities",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "MPO TAZ Layer Regional",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville MPO TAZ",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Decatur MPO TAZ",
-    "Description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Watersheds",
-    "Description": "Nunc scelerisque dolor in purus ullamcorper, eget venenatis enim pulvinar.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Ecoregions",
-    "Description": "Proin faucibus vulputate felis quis placerat. Etiam quis tincidunt felis.",
-    "Type": "table",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Downtown Master Plan",
-    "Description": "Nam sit amet nisi nec sapien mollis malesuada blandit nec lacus.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Land Use By Zoning 2015",
-    "Description": "Etiam tempor ullamcorper sollicitudin. Vestibulum a mauris in augue condimentum vehicula.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Downtown Proposed Zoning Map 2005",
-    "Description": "Nullam finibus a massa eget tincidunt.  Phasellus auctor tempor pharetra.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Huntsville Area Transportation Study",
-    "Description": "Sed feugiat enim enim, quis ultrices velit malesuada sed. Suspendisse potenti.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "City of Madison Growth Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "City of Madison Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Athens Future Land Use Development Plan",
-    "Description": "In aliquam orci non turpis pellentesque cursus. Vivamus pulvinar volutpat mauris sit amet ultrices.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  },
-  {
-    "Geo": "Reg",
-    "Name": "Falkville Zoning Map",
-    "Description": "Nam fringilla accumsan rutrum. Fusce tincidunt pretium ante, id tincidunt lorem. Nam sollicitudin nisl nunc, ac mattis ante tristique hendrerit.",
-    "Type": "report",
-    "Link": "<a target='_blank' href=''>Download</a>"
-  }
-];
+    "Geo": "TBD",
+    "Name": "TBD",
+    "Description": "TBD",
+    "Type": "Report",
+    "Link": "TBD",
+    "Year": "2016"
+  }];
