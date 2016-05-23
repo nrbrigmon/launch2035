@@ -40,13 +40,13 @@ export class Entre2Component {
             plotOptions: {
                 bar: {
                     dataLabels: {
-                        enabled: true
+                        enabled: true,
                     }
                 }
             },
             series: [{
                 name: null,
-                data: [28.7, 21.8, 9.9, 8.9, 8.9, 8.3, 7.0, 1.9]
+                data: [28.7, 21.8, 9.9, 8.9, 8.3, 7.0, 1.9]
             }]
         };
     }

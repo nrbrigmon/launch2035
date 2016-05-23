@@ -54,7 +54,7 @@ export class Workforce3Component {
             },
             series: [{
                 name: null,
-                data: [6, 4.6, 4.6, 4.6, 4.3, 4, 3.4]
+                data: [6.0, 4.6, 4.6, 4.6, 4.3, 4.0, 3.4]
             }]
         };
     }

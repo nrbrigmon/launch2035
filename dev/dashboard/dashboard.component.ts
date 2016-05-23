@@ -32,8 +32,8 @@ import {ChartComponent18} from './land-use/chart-component-18.component';
 })
 
 export class DashboardComponent {
-  category:string = 'Workforce'; //category will help set the HTML template directive
-  cObj:string = 'Workforce';  //cObj will help set an active class for the navbar
+  category:string = 'Home'; //category will help set the HTML template directive
+  cObj:string = 'Home';  //cObj will help set an active class for the navbar
   constructor(public el: ElementRef, public renderer: Renderer){
     this.clickedOutside = this.clickedOutside.bind(this);
   }

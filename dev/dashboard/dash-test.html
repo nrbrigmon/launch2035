@@ -53,6 +53,17 @@
         </div>
         <div class="col-xs-12">
           <h2 class="chosen-category-header">{{category}}</h2>
+
+          <template [ngSwitchWhen]="'Home'" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 dashboard-main">
+            <div class="placeholders">
+              <h3>You are looking at Performance Measures for the region...</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat imperdiet odio, eu cursus metus dapibus nec. Aliquam sed nisi ac dui tempus gravida suscipit vitae velit. Nulla a ante vitae lorem malesuada pharetra. In quis commodo ipsum, in auctor diam. Morbi quis porttitor metus. Curabitur porttitor lectus eros, a iaculis felis laoreet non. Duis ornare maximus luctus.
+
+Nulla volutpat diam at pulvinar auctor. Sed lacinia ipsum egestas nulla vulputate, mollis rutrum arcu dapibus. Integer vel tristique urna, in finibus est. Fusce et mattis eros. Duis ut nunc semper, bibendum ex ac, blandit ligula. Phasellus malesuada dolor ac nisi condimentum, vel ultrices ligula commodo. Vestibulum egestas, libero et venenatis ornare, sapien lacus luctus augue, et pellentesque sem justo sit amet tortor. Sed cursus interdum finibus. Maecenas tempor commodo orci quis congue. Maecenas tincidunt congue odio vel pulvinar. Donec eu commodo augue. Sed a vulputate mi. In hac habitasse platea dictumst. Cras aliquam rhoncus scelerisque. Cras quis neque sem.
+
+Nullam magna risus, tristique et varius vel, condimentum a metus. Proin feugiat eros vitae leo aliquam, et sodales elit auctor. Mauris mollis et metus eu lobortis. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras sem sapien, mollis ut nibh vitae, molestie interdum justo. Mauris maximus facilisis dolor, id vulputate tortor egestas in. Morbi condimentum est non pellentesque imperdiet. Mauris efficitur aliquet turpis sit amet vehicula. Nunc est ipsum, tristique vel interdum sed, varius vel turpis. Duis dui leo, dapibus in purus in, dictum scelerisque urna. Proin fringilla eget tortor quis euismod.</p>
+            </div>
+          </template>
           <template [ngSwitchWhen]="'Region'" >
             <div class="placeholders">
               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 placeholder">

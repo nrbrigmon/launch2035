@@ -191,6 +191,7 @@ var globalhead, globalfoot;
                     "aoColumns": tableDataColumns,
                     "fnInitComplete": function(oSettings, json) {
                         $("#add-layer-dropdown").show() //enable dropdown when everything has loaded...
+                        $("#tables_list").val('');  //allow for another selection
                         $("#waiting").remove(); //remove animation and load table...
                         $("#" + tableSelection).show();
                         //update legend List
