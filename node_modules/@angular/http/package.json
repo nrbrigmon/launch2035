@@ -1,7 +1,6 @@
 {
   "name": "@angular/http",
   "version": "2.0.0-rc.1",
-  "description": "",
   "main": "index.js",
   "jsnext:main": "esm/index.js",
   "typings": "index.d.ts",
@@ -38,5 +37,6 @@
     "host": "packages-12-west.internal.npmjs.com",
     "tmp": "tmp/http-2.0.0-rc.1.tgz_1462310721571_0.5386864563915879"
   },
-  "directories": {}
+  "directories": {},
+  "readme": "ERROR: No README data found!"
 }

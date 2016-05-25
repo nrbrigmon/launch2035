@@ -1,0 +1,78 @@
+<!doctype>
+<html>
+<head>
+    <title>Angular 2 Dev Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
+  	<link rel="stylesheet" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" />
+  	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geocoder-mapzen/1.4.0/leaflet-geocoder-mapzen.css">
+  	<link rel="stylesheet" href="custom/select2.min.css"/>
+  	<link rel="stylesheet" href="custom/stacktable.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/custom_geoserver_leaflet_style.css">
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+  	<script src="//cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+  	<script src="custom/select2.full.min.js"></script>
+  	<script src="custom/datatables-1-10.js"></script>
+  	<script src="custom/mapzen-js.js"></script>
+  	<script src="custom/stacktable.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="row inside-iframe">
+    <div class="module">
+      <h2 class="welcome-tag">Welcome to Regional Interactive Mapping</h2>
+  		<div class="add-label-items">
+  			Labels (optional):
+  			<div>
+  				<input type="checkbox" name="Cities" id="addCityLabels"/> Cities
+  			</div>
+  			<!-- <div>
+  				<input type="checkbox" name="Streets" id="addStreetLabels"/> Streets
+  			</div> -->
+  		</div>
+	    <div id="legendContainer">
+  	    <div id="legendWrapper" class="info">
+    			<div id="hideLegend" class="hide-show-button btn btn-sm"><span class="glyphicon glyphicon-resize-small"></span></div>
+    			<div id="showLegend" class="hide-show-button btn btn-sm"><span class="glyphicon glyphicon-resize-full"></span></div>
+          <h4>Select a data set to view on the map.</h4>
+          <ul>
+          	<li class="hide-on-mobile">Drag layers to sort results.</li>
+          	<li class="hide-on-mobile">Click on  <span class='glyphicon glyphicon-minus-sign' id=''></span>  to delete a layer.</li>
+          	<li class="hide-on-mobile">Click on  <span class='glyphicon glyphicon-download-alt' id=''></span>  to download map file.</li>
+          </ul>
+    	    <div id="legendInner">
+                <ul id="legend"></ul>
+          </div>
+          <div id="add-layer-dropdown" title="Add New Map Layer">
+          	<select class="form-control select-js-basic" id="tables_list">
+          		<option selected disabled value="none">Select a data set</option>-
+          		<option value="MPO_TAZ_05162016_WGS1984">Full MPO TAZ Layer</option>
+          		<option value="MPO_TAZ_Emp_Growth">Employment Change (2010 - 2040)</option>
+          		<option value="Northern_AL_Watersheds_05162016">Watersheds</option>
+          		<option value="Regional_Ecoregions">Ecoregions</option>
+          		<option value="TriCountyCensusPlaces">US Census Places (Cities)</option>
+          	</select>
+          </div>
+    		</div>
+      </div>
+	    <div id="map"></div>
+    </div>
+  </div>
+  <div class='row' id="table-viewer">
+  	<div class='module'>
+  		<div class='table-results-box'>
+  		</div>
+  		<div id='description-box'>
+        <h3>View, explore, and download community data within Madison, Morgan, and Limestone Counties using our interactive map.</h3>
+        <p>Map layers can be downloaded as KML files to be used with Google Earth. Data tables located underneath the map can be downloaded as Excel compatible CSV files by clicking on the download icon next to the table name in the box above the table. For all comments and feedback in improving this interactive map, please contact nathan@civicanalytics.com. This map is optimized for desktop experience.</p>
+        <p><i>Note: This map will be updating with new data and layers throughout the CEDS process. </i></p>
+      </div>
+  	</div>
+  </div>
+<!--main container-->
+</body>
+
+<script src="custom/custom-leaflet-geoserver.js"></script>

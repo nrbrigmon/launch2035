@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="core-js/client/shim.min.js"></script>
+
+    <script src="zone.js/dist/zone.js"></script>
+    <script src="reflect-metadata/Reflect.js"></script>
+    <script src="systemjs/dist/system.src.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <style>
+         #waiting{
+             margin-top: 200px;
+         }
+         h4, h5{
+             text-align: center;
+             font-family: 'Montserrat', sans-serif;
+             text-transform: uppercase;
+         }
+         .spinner {
+           margin: 15px auto;
+           margin-bottom: -15px;
+           width: 80px;
+           height: 60px;
+           text-align: center;
+           font-size: 10px;
+         }
+
+         .spinner > div {
+           background-color: #E84A36;
+           height: 75%;
+           margin: 0px 2px 0px 2px;
+           width: 6px;
+           display: inline-block;
+           -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+           animation: stretchdelay 1.2s infinite ease-in-out;
+         }
+
+         .spinner .rect2 {
+           -webkit-animation-delay: -1.1s;
+           animation-delay: -1.1s;
+         }
+
+         .spinner .rect3 {
+           -webkit-animation-delay: -1.0s;
+           animation-delay: -1.0s;
+         }
+
+         .spinner .rect4 {
+           -webkit-animation-delay: -0.9s;
+           animation-delay: -0.9s;
+         }
+
+         .spinner .rect5 {
+           -webkit-animation-delay: -0.8s;
+           animation-delay: -0.8s;
+         }
+
+         @-webkit-keyframes stretchdelay {
+           0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+           20% { -webkit-transform: scaleY(1.0) }
+         }
+
+         @keyframes stretchdelay {
+           0%, 40%, 100% {
+             transform: scaleY(0.4);
+             -webkit-transform: scaleY(0.4);
+           }  20% {
+             transform: scaleY(1.0);
+             -webkit-transform: scaleY(1.0);
+           }
+         }
+       </style>
+
+    <!-- Development mod -->
+
+    <script src="js/systemjs.config.js"></script>
+    <script>
+      System.config({
+        defaultJSExtensions: true,
+        packages: {
+            'app': { format: 'register', defaultExtension: 'js' },
+            'angular2-highcharts' : {
+              main: 'index',
+              format: 'cjs',
+              defaultExtension: 'js',
+            }
+          },
+        //map tells the System loader where to look for things
+        map: {
+          'angular2-highcharts': 'https://cdn.rawgit.com/gevgeny/angular2-highcharts/master/dist',
+          'highcharts/highstock.src': 'https://cdn.rawgit.com/highcharts/highcharts-dist/v4.2.1/highstock.js'
+        }
+      });
+      System.import('main')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>
+      <div id="waiting">
+        <div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div>
+        </div>
+        <h5 class="loading-text">Loading</h5>
+      </div>
+    </my-app>
+
+    <!-- Production mod -->
+    <!-- <script src="js/bundle.min.js"></script> -->
+  </body>
+</html>

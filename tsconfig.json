@@ -1,65 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "system",
+    "target": "es5",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "outDir": "./app"
+    "noImplicitAny": false
   },
-  "filesGlob": [
-    "./dev/**/*.ts",
-    "!./node_modules/**/*.ts"
-  ],
   "exclude": [
     "node_modules",
     "typings/main",
     "typings/main.d.ts"
-  ],
-  "atom": {
-    "rewriteTsconfig": true
-  },
-  "files": [
-    "./dev/app.component.ts",
-    "./dev/boot.ts",
-    "./dev/dashboard/chart-component-1.component.ts",
-    "./dev/dashboard/chart-component-2.component.ts",
-    "./dev/dashboard/chart-component-3.component.ts",
-    "./dev/dashboard/chart-component-4.component.ts",
-    "./dev/dashboard/chart-component-5.component.ts",
-    "./dev/dashboard/dashboard.component.ts",
-    "./dev/dashboard/entreprenr/entreprenr-1.component.ts",
-    "./dev/dashboard/entreprenr/entreprenr-2.component.ts",
-    "./dev/dashboard/entreprenr/entreprenr-3.component.ts",
-    "./dev/dashboard/entreprenr/entreprenr-4.component.ts",
-    "./dev/dashboard/land-use/chart-component-10.component.ts",
-    "./dev/dashboard/land-use/chart-component-11.component.ts",
-    "./dev/dashboard/land-use/chart-component-12.component.ts",
-    "./dev/dashboard/land-use/chart-component-13.component.ts",
-    "./dev/dashboard/land-use/chart-component-14.component.ts",
-    "./dev/dashboard/land-use/chart-component-15.component.ts",
-    "./dev/dashboard/land-use/chart-component-16.component.ts",
-    "./dev/dashboard/land-use/chart-component-17.component.ts",
-    "./dev/dashboard/land-use/chart-component-18.component.ts",
-    "./dev/dashboard/land-use/chart-component-7.component.ts",
-    "./dev/dashboard/land-use/chart-component-8.component.ts",
-    "./dev/dashboard/land-use/chart-component-9.component.ts",
-    "./dev/dashboard/set-active.directive.ts",
-    "./dev/dashboard/workforce/workforce-1.component.ts",
-    "./dev/dashboard/workforce/workforce-2.component.ts",
-    "./dev/dashboard/workforce/workforce-3.component.ts",
-    "./dev/dashboard/workforce/workforce-4.component.ts",
-    "./dev/home/home.component.ts",
-    "./dev/warehouse/dataset-viewer.component.ts",
-    "./dev/warehouse/dataset.schema.ts",
-    "./dev/warehouse/dataset.service.ts",
-    "./dev/warehouse/fileNameFilter.pipe.ts",
-    "./dev/warehouse/fileTypeFilter.pipe.ts",
-    "./dev/warehouse/filter.pipe.ts",
-    "./dev/warehouse/warehouse.component.ts",
-    "./dev/webmap/webmap.component.ts"
   ]
 }

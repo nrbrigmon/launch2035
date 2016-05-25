@@ -1,7 +1,6 @@
 {
   "name": "@angular/core",
   "version": "2.0.0-rc.1",
-  "description": "",
   "main": "index.js",
   "jsnext:main": "esm/index.js",
   "typings": "index.d.ts",
@@ -38,5 +37,6 @@
     "host": "packages-16-east.internal.npmjs.com",
     "tmp": "tmp/core-2.0.0-rc.1.tgz_1462310703407_0.9186127157881856"
   },
-  "directories": {}
+  "directories": {},
+  "readme": "ERROR: No README data found!"
 }

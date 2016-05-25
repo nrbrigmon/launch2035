@@ -1,7 +1,6 @@
 {
   "name": "@angular/platform-browser-dynamic",
   "version": "2.0.0-rc.1",
-  "description": "",
   "main": "index.js",
   "jsnext:main": "esm/index.js",
   "typings": "index.d.ts",
@@ -40,5 +39,6 @@
     "host": "packages-12-west.internal.npmjs.com",
     "tmp": "tmp/platform-browser-dynamic-2.0.0-rc.1.tgz_1462310733287_0.5319103891961277"
   },
-  "directories": {}
+  "directories": {},
+  "readme": "ERROR: No README data found!"
 }
