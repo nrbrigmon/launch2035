@@ -1,5 +1,19 @@
 import {Component, ElementRef, Renderer} from '@angular/core';
-import {ChartComponent1} from './chart-component-1.component';
+import {Regional1Component} from './region/regional-1.component';
+import {Regional2Component} from './region/regional-2.component';
+import {Regional3Component} from './region/regional-3.component';
+import {Regional4Component} from './region/regional-4.component';
+import {Regional5Component} from './region/regional-5.component';
+import {Regional6Component} from './region/regional-6.component';
+import {Regional7Component} from './region/regional-7.component';
+import {Regional8Component} from './region/regional-8.component';
+import {Regional9Component} from './region/regional-9.component';
+import {County1Component} from './county/county-1.component';
+import {County2Component} from './county/county-2.component';
+import {County3Component} from './county/county-3.component';
+import {County4Component} from './county/county-4.component';
+import {County5Component} from './county/county-5.component';
+import {County6Component} from './county/county-6.component';
 import {ChartComponent2} from './chart-component-2.component';
 import {ChartComponent3} from './chart-component-3.component';
 import {ChartComponent4} from './chart-component-4.component';
@@ -30,7 +44,7 @@ import 'rxjs/add/operator/map';
 @Component({
   templateUrl:'dashboard/dash-test.html',
   styleUrls: ['dashboard/dash-test.css'],
-  directives: [ChartComponent1, ChartComponent2, ChartComponent3, ChartComponent4, ChartComponent5, Workforce1Component, Workforce2Component, Workforce3Component, Workforce4Component, Entre1Component, Entre2Component, Entre3Component, Entre4Component, ChartComponent7, ChartComponent8, ChartComponent9, ChartComponent10, ChartComponent11, ChartComponent12, ChartComponent13, ChartComponent14, ChartComponent15, ChartComponent16, ChartComponent17, ChartComponent18]
+  directives: [Regional1Component, Regional2Component, Regional3Component, Regional4Component, Regional5Component, Regional6Component, Regional7Component, Regional8Component, Regional9Component, County1Component, County2Component, County3Component, County4Component, County5Component, County6Component, ChartComponent3, ChartComponent4, ChartComponent5, Workforce1Component, Workforce2Component, Workforce3Component, Workforce4Component, Entre1Component, Entre2Component, Entre3Component, Entre4Component, ChartComponent7, ChartComponent8, ChartComponent9, ChartComponent10, ChartComponent11, ChartComponent12, ChartComponent13, ChartComponent14, ChartComponent15, ChartComponent16, ChartComponent17, ChartComponent18]
 })
 
 export class DashboardComponent {

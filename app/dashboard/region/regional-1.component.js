@@ -13,17 +13,58 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Regional1Component = (function () {
     function Regional1Component() {
         this.options = {
-            title: { text: 'Indicator A' },
-            subtitle: { text: "With Associate's Degree or Higher (2014)" },
-            colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
+            chart: { type: 'bar' },
+            title: { text: 'GDP Growth' },
+            subtitle: { text: "Current Dollars (2014)" },
+            xAxis: {
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
+            },
+            yAxis: {
+                title: { text: null },
+                labels: { enabled: false },
+                gridLineWidth: 0
+            },
+            legend: { enabled: false },
+            plotOptions: {
+                bar: {
+                    colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C'],
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.y:.1f}%'
+                    }
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b><br/>'
+            },
             series: [{
-                    name: 's1',
-                    data: [2, 3, 5, 8, 13],
-                    allowPointSelect: true
-                }, {
-                    name: 's2',
-                    data: [-2, -3, -5, -8, -13],
-                    allowPointSelect: true
+                    name: 'Growth',
+                    colorByPoint: true,
+                    data: [{
+                            name: 'Austin',
+                            y: 7.7
+                        }, {
+                            name: 'Greenville, SC',
+                            y: 5.1
+                        }, {
+                            name: 'Colorado Springs',
+                            y: 4.4
+                        }, {
+                            name: 'Raleigh-Durham',
+                            y: 4.3
+                        }, {
+                            name: 'US',
+                            y: 4.1
+                        }, {
+                            name: 'Launch2035',
+                            y: 2.8
+                        }, {
+                            name: 'Chattanooga',
+                            y: 1.0
+                        }]
                 }]
         };
     }
@@ -48,4 +89,4 @@ var Regional1Component = (function () {
     return Regional1Component;
 }());
 exports.Regional1Component = Regional1Component;
-//# sourceMappingURL=chart-component-1.component.js.map
+//# sourceMappingURL=regional-1.component.js.map
