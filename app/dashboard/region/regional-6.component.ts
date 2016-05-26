@@ -51,7 +51,7 @@ export class Regional6Component {
                 pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
             },
             series: [{
-                name: 'Growth',
+                name: 'Rate',
                 colorByPoint: true,
                 data: [{
                     name: 'Launch2035',

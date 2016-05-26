@@ -54,7 +54,7 @@ export class Regional4Component {
                 pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y}</b><br/>'
             },
             series: [{
-                name: 'Growth',
+                name: 'GDP',
                 colorByPoint: true,
                 data: [{
                     name: 'Raleigh-Durham',

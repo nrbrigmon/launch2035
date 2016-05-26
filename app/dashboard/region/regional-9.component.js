@@ -41,7 +41,7 @@ var Regional9Component = (function () {
                 pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y}</b><br/>'
             },
             series: [{
-                    name: 'Growth',
+                    name: 'Rent',
                     colorByPoint: true,
                     data: [{
                             name: 'Austin',

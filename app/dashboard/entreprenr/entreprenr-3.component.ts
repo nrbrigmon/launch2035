@@ -24,29 +24,57 @@ export class Entre3Component {
     constructor() {
         this.options = {
             chart:  { type: 'bar' },
-            title : { text : 'New/Young (<5 Yrs) Firms' },
+            title : { text : 'New/Young Firms (<5 Yrs)' },
             subtitle : { text : "Per 1,000 Population (2013)" },
-            colors: ['#E84A36', '#222222'],
             xAxis: {
-                categories: ['Austin', 'Raleigh-Durham', 'Colorado Springs', 'US', 'Launch2035', 'Chattanooga', 'Greenville, SC'],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
-            legend: {
-                enabled: false
-            },
+            legend: { enabled: false },
             plotOptions: {
                 bar: {
+                    colors: ['#E84A36', '#E84A36', '#E84A36', '#E84A36', '#981B41', '#E84A36', '#E84A36'],
                     dataLabels: {
-                        enabled: true
+                        enabled: true,
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+            },
             series: [{
-                name: null,
-                data: [6.1, 5.1, 5.0, 4.5, 3.8, 3.5, 3.3]
+                name: 'Firms Per 1K',
+                colorByPoint: true,
+                data: [{
+                    name: 'Austin',
+                    y: 6.1
+                }, {
+                    name: 'Raleigh-Durham',
+                    y: 5.1
+                }, {
+                    name: 'Colorado Springs',
+                    y: 5.0
+                }, {
+                    name: 'US',
+                    y: 4.5
+                }, {
+                    name: 'Launch2035',
+                    y: 3.8
+                }, {
+                    name: 'Chattanooga',
+                    y: 3.5
+                }, {
+                    name: 'Greenville, SC',
+                    y: 3.3
+                }]
             }]
         };
     }

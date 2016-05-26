@@ -41,7 +41,7 @@ var Regional8Component = (function () {
                 pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y}</b><br/>'
             },
             series: [{
-                    name: 'Growth',
+                    name: 'Value',
                     colorByPoint: true,
                     data: [{
                             name: 'Colorado Springs',

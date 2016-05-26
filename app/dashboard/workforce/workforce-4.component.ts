@@ -26,35 +26,55 @@ export class Workforce4Component {
             chart:  { type: 'bar' },
             title : { text : 'Skilled Technology Jobs' },
             subtitle : { text : "As Share of Total Employment (2016)" },
-            colors: ['#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Launch2035', 'Austin', 'Raleigh-Durham', 'Colorado Springs', 'US', 'Greenville, SC', 'Chattanooga'],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
-                labels: {
-                    formatter: function () {
-                          return this.value + '%';
-                    }
-                }
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
-            legend: {
-                enabled: false
-            },
+            legend: { enabled: false },
             plotOptions: {
                 bar: {
+                    colors: ['#222222', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C'],
                     dataLabels: {
                         enabled: true,
-                        formatter: function () {
-                              return this.y + '%';
-                        }
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+            },
             series: [{
-                name: null,
-                data: [7.6, 6.9, 6.1, 4.8, 3.4, 2.5, 2.1]
+                  name: 'Share',
+                  colorByPoint: true,
+                  data: [{
+                      name: 'Launch2035',
+                      y: 7.6
+                  }, {
+                      name: 'Austin',
+                      y: 6.9
+                  }, {
+                      name: 'Raleigh-Durham',
+                      y: 6.1
+                  }, {
+                      name: 'Colorado Springs',
+                      y: 4.8
+                  }, {
+                      name: 'US',
+                      y: 3.4
+                  }, {
+                      name: 'Greenville, SC',
+                      y: 2.5
+                  }, {
+                      name: 'Chattanooga',
+                      y: 2.1
+                  }]
             }]
         };
     }

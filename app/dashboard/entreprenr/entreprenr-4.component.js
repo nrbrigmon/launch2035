@@ -14,37 +14,57 @@ var Entre4Component = (function () {
     function Entre4Component() {
         this.options = {
             chart: { type: 'bar' },
-            title: { text: 'Employment at New/Young (<5 Yrs) Firms' },
+            title: { text: 'Employment at New/Young Firms (<5 Yrs)' },
             subtitle: { text: "As Share of Total Employment (2013)" },
-            colors: ['#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Austin', 'Raleigh-Durham', 'Launch2035', 'US', 'Colorado Springs', 'Greenville, SC', 'Chattanooga'],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
-                labels: {
-                    formatter: function () {
-                        return this.value + '%';
-                    }
-                }
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
-            legend: {
-                enabled: false
-            },
+            legend: { enabled: false },
             plotOptions: {
                 bar: {
+                    colors: ['#4C4C4C', '#4C4C4C', '#222222', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C'],
                     dataLabels: {
                         enabled: true,
-                        formatter: function () {
-                            return this.y + '%';
-                        }
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+            },
             series: [{
-                    name: null,
-                    data: [12.6, 10.0, 9.3, 9.1, 8.5, 7.7, 7.1]
+                    name: 'Share',
+                    colorByPoint: true,
+                    data: [{
+                            name: 'Austin',
+                            y: 12.6
+                        }, {
+                            name: 'Raleigh-Durham',
+                            y: 10.0
+                        }, {
+                            name: 'Launch2035',
+                            y: 9.3
+                        }, {
+                            name: 'US',
+                            y: 9.1
+                        }, {
+                            name: 'Colorado Springs',
+                            y: 8.5
+                        }, {
+                            name: 'Greenville, SC',
+                            y: 7.7
+                        }, {
+                            name: 'Chattanooga',
+                            y: 7.1
+                        }]
                 }]
         };
     }

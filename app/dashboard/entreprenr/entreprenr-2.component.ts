@@ -26,28 +26,58 @@ export class Entre2Component {
             chart:  { type: 'bar' },
             title : { text : 'Patents' },
             subtitle : { text : "Per 10,000 Employees (2013)" },
-            colors: ['#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Austin', 'Raleigh-Durham', 'Greenville, SC', 'US', 'Launch2035', 'Colorado Springs', 'Chattanooga'],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
             legend: {
                 enabled: false
             },
             plotOptions: {
                 bar: {
+                    colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+            },
             series: [{
-                name: null,
-                data: [28.7, 21.8, 9.9, 8.9, 8.3, 7.0, 1.9]
-            }]
+                  name: 'Patents per 1K',
+                  colorByPoint: true,
+                  data: [{
+                      name: 'Austin',
+                      y: 28.7
+                  }, {
+                      name: 'Raleigh-Durham',
+                      y: 21.8
+                  }, {
+                      name: 'Greenville, SC',
+                      y: 9.9
+                  }, {
+                      name: 'US',
+                      y: 8.9
+                  }, {
+                      name: 'Launch2035',
+                      y: 8.3
+                  }, {
+                      name: 'Colorado Springs',
+                      y: 7.0
+                  }, {
+                      name: 'Chattanooga',
+                      y: 1.9
+                  }]
+              }]
         };
     }
     saveChart(chart) {

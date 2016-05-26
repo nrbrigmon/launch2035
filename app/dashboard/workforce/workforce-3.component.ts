@@ -24,37 +24,57 @@ export class Workforce3Component {
     constructor() {
         this.options = {
             chart:  { type: 'bar' },
-            title : { text : 'Population Age (16-19) with No High School Diploma' },
+            title : { text : 'Population Age with No High School Diploma (16-19)' },
             subtitle : { text : "And Not Enrolled (2014)" },
-            colors: ['#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Greenville, SC', 'US', 'Chattanooga', 'Launch2035', 'Colorado Springs', 'Austin', 'Raleigh-Durham' ],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
-                labels: {
-                    formatter: function () {
-                          return this.value + '%';
-                    }
-                }
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
-            legend: {
-                enabled: false
-            },
+            legend: { enabled: false },
             plotOptions: {
                 bar: {
+                    colors: ['#E84A36', '#E84A36', '#E84A36', '#981B41', '#E84A36', '#E84A36', '#E84A36'],
                     dataLabels: {
                         enabled: true,
-                        formatter: function () {
-                              return this.y + '%';
-                        }
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+            },
             series: [{
-                name: null,
-                data: [6.0, 4.6, 4.6, 4.6, 4.3, 4.0, 3.4]
+                name: 'Population',
+                colorByPoint: true,
+                data: [{
+                    name: 'Greenville, SC',
+                    y: 6.0
+                }, {
+                    name: 'US',
+                    y: 4.6
+                }, {
+                    name: 'Chattanooga',
+                    y: 4.6
+                }, {
+                    name: 'Launch2035',
+                    y: 4.6
+                }, {
+                    name: 'Colorado Springs',
+                    y: 4.3
+                }, {
+                    name: 'Austin',
+                    y: 4.0
+                }, {
+                    name: 'Raleigh-Durham',
+                    y: 3.4
+                }]
             }]
         };
     }

@@ -14,37 +14,57 @@ var Workforce1Component = (function () {
     function Workforce1Component() {
         this.options = {
             chart: { type: 'bar' },
-            title: { text: 'Share of Primary Working Age (25-64) Population' },
+            title: { text: 'Share of Primary Working Age Population (25-64) ' },
             subtitle: { text: "With Associate's Degree or Higher (2014)" },
-            colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Raleigh-Durham', 'Austin', 'Colorado Springs', 'Launch2035', 'US', 'Greenville, SC', 'Chattanooga'],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
-                labels: {
-                    formatter: function () {
-                        return this.value + '%';
-                    }
-                }
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
-            legend: {
-                enabled: false
-            },
+            legend: { enabled: false },
             plotOptions: {
                 bar: {
+                    colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C', '#A3D65C', '#A3D65C'],
                     dataLabels: {
                         enabled: true,
-                        formatter: function () {
-                            return this.y + '%';
-                        }
+                        format: '{point.y:.0f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.0f}%</b><br/>'
+            },
             series: [{
-                    name: null,
-                    data: [54, 49, 47, 42, 40, 37, 36]
+                    name: 'Share',
+                    colorByPoint: true,
+                    data: [{
+                            name: 'Raleigh-Durham',
+                            y: 54
+                        }, {
+                            name: 'Austin',
+                            y: 49
+                        }, {
+                            name: 'Colorado Springs',
+                            y: 47
+                        }, {
+                            name: 'Launch2035',
+                            y: 42
+                        }, {
+                            name: 'US',
+                            y: 40
+                        }, {
+                            name: 'Greenville, SC',
+                            y: 37
+                        }, {
+                            name: 'Chattanooga',
+                            y: 36
+                        }]
                 }]
         };
     }

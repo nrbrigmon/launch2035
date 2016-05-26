@@ -24,38 +24,60 @@ export class Workforce2Component {
     constructor() {
         this.options = {
             chart:  { type: 'bar' },
-            title : { text : 'Growth in Primary Working Age (25-64) Population' },
+            title : { text : 'Growth in Primary Working Age Population (25-64)' },
             subtitle : { text : "With Associate's Degree or Higher (2014)" },
-            colors: ['#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Austin', 'Raleigh-Durham', 'Chattanooga', 'Launch2035', 'US', 'Colorado Springs', 'Greenville, SC' ],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
-                labels: {
-                    formatter: function () {
-                          return this.value + '%';
-                    }
-                }
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
             legend: {
                 enabled: false
             },
             plotOptions: {
                 bar: {
+                    colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        formatter: function () {
-                              return this.y + '%';
-                        }
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+            },
             series: [{
-                name: null,
-                data: [4.1, 2.8, 2.3, 1.9, 1.9, 1.5, 1.1]
-            }]
+                  name: 'Growth',
+                  colorByPoint: true,
+                  data: [{
+                      name: 'Austin',
+                      y: 4.1
+                  }, {
+                      name: 'Raleigh-Durham',
+                      y: 2.8
+                  }, {
+                      name: 'Chattanooga',
+                      y: 2.3
+                  }, {
+                      name: 'Launch2035',
+                      y: 1.9
+                  }, {
+                      name: 'US',
+                      y: 1.9
+                  }, {
+                      name: 'Colorado Springs',
+                      y: 1.5
+                  }, {
+                      name: 'Greenville, SC',
+                      y: 1.1
+                  }]
+              }]
         };
     }
     saveChart(chart) {

@@ -26,35 +26,55 @@ export class Entre1Component {
             chart:  { type: 'bar' },
             title : { text : 'Venture Capital Investment' },
             subtitle : { text : "Per $10,000 GDP (2015)" },
-            colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Austin', 'US', 'Raleigh-Durham', 'Chattanooga', 'Launch2035', 'Greenville, SC', 'Colorado Springs'],
-                title: { text: null }
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
                 title: { text: null },
-                labels: {
-                    formatter: function () {
-                          return '$'+this.value;
-                    }
-                }
+                labels: { enabled: false },
+                gridLineWidth: 0
             },
-            legend: {
-                enabled: false
-            },
+            legend: { enabled: false },
             plotOptions: {
                 bar: {
+                    colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C', '#A3D65C'],
                     dataLabels: {
                         enabled: true,
-                        formatter: function () {
-                              return '$'+this.y;
-                        }
+                        format: '{point.y:.2f}%'
                     }
                 }
             },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b><br/>'
+            },
             series: [{
-                name: null,
-                data: [64.20, 34.64, 32.86, 9.24, 8.76, 8.22, 2.34]
+                name: 'Investment',
+                colorByPoint: true,
+                data: [{
+                    name: 'Austin',
+                    y: 64.20
+                }, {
+                    name: 'US',
+                    y: 34.64
+                }, {
+                    name: 'Raleigh-Durham',
+                    y: 32.86
+                }, {
+                    name: 'Chattanooga',
+                    y: 9.24
+                }, {
+                    name: 'Launch2035',
+                    y: 8.76
+                }, {
+                    name: 'Greenville, SC',
+                    y: 8.22
+                }, {
+                    name: 'Colorado Springs',
+                    y: 2.34
+                }]
             }]
         };
     }
