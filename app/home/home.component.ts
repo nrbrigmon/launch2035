@@ -34,7 +34,7 @@ import {Router} from "@angular/router";
   `,
   styles:[`
     .top-row{
-      padding-top: 55px;
+      padding-top: 50px;
     }
     .app-entry-row{
         padding: 20px;
