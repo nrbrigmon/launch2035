@@ -23,7 +23,7 @@ export class County1Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'column' },
+            chart:  { type: 'bar' },
             title : { text : 'Total Employment Growth' },
             subtitle : { text : "(2015)" },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],

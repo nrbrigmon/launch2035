@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var County2Component = (function () {
     function County2Component() {
         this.options = {
-            chart: { type: 'column' },
+            chart: { type: 'bar' },
             title: { text: 'Population Growth' },
             subtitle: { text: "(2014)" },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],

@@ -23,7 +23,7 @@ export class County6Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'column' },
+            chart:  { type: 'bar' },
             title : { text : 'Unemployement Rate' },
             subtitle : { text : "Not seasonally adjusted (March 2016)" },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
