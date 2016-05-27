@@ -42,7 +42,6 @@ body, #map {
 }
 .info {
     padding: 6px 8px;
-    font-size: 14px;
     background: white;
     background: rgba(255,255,255,0.8);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -131,7 +130,14 @@ body, #map {
 
 .welcome-tag{
   text-align: center;
-  padding:10px
+  padding:10px;
+  font-size: 17px;
+}
+
+#legendWrapper h4, #legendWrapper #legendInner, div.info.visible-layers *,
+#legendWrapper #add-layer-dropdown, li.info-text, .select2-results__option,
+.tableTitles{
+    font-size: 10px;
 }
 /***************************
 /* Legend Menu
@@ -142,17 +148,16 @@ ul#legend{
     text-align: left;
 }
 #legendWrapper {
-    font: inherit;
     position: absolute;
     background: rgba(0, 0, 0, 0.65);
     padding: 3rem;
-    top: 13rem;
+    top: 11rem;
+    left: 5px;
     text-align: left;
     z-index: 9;
     width: 35%;
     max-width: 450px;
     min-width: 313px;
-    left:25px;
 }
 
 #legendWrapper h4{
@@ -252,16 +257,19 @@ li#legend_option:hover{
 #hideLegend{
   padding: 3px 3px;
 }
-
+.glyphicon-custom{
+    font-size: 10px;
+}
 .hide-show-button{
     position: absolute;
     top: 4px;
     left: 4px;
-    font-size: 10px;
-    padding: 0px 3px;
-    color: #656565;
-    border-color: #656565;
-    background-color: #565655;
+    height: 18px;
+    width: 18px;
+    padding: 2px 2px 0px 3px;
+    color: #A2D55C;
+    border-color: #A3D65C;
+    background-color: #FFFFFF;
 }
 
 /**************************
@@ -275,28 +283,8 @@ li#legend_option:hover{
 }
 .visible-layers{
     display:none;
-    padding:0px 0px 10px 0px;
-    width:260px;
 }
 
-.visible-layers div {
-    font-size:12px;
-}
-.visible-layers #legend-layer-list div.polygon{
-    float: left;
-    margin: 3px 5px 0 10px;
-    width: 3px;
-    opacity: 0.7;
-    height: 3px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    padding: 5px;
-    border: 1px solid white;
-    z-index: 1000;
-}
 
 .polygon-MPOFull {background-color: #feb24c}
 
@@ -349,16 +337,7 @@ li#legend_option:hover{
     padding-left: 15px;
 }
 .add-label-items{
-    color: #222222;
-    font-size: 9px;
-    position: absolute;
-    top: 505px;
-    left: 20px;
-    padding: 5px;
-    z-index: 999;
-}
-.add-label-items div{
-    display:inline;
+    display:none;
 }
 .select2-results__options{
   color:#333333;
@@ -418,9 +397,11 @@ li#legend_option:hover{
     margin: 0 auto;
     margin-bottom: 100px;
 }
-.table-results-box table{
+.table-results-box .dataTables_wrapper,
+.table-results-box .dataTables_wrapper table.dataTable{
     font-size: 11px;
 }
+
 .table-results-box table th:not(:first-child),
 .table-results-box table td:not(:first-child){
     text-align: right;
@@ -437,6 +418,9 @@ li#legend_option:hover{
     margin: 0 auto;
     text-align: center;
     margin-bottom: 40px;
+}
+#description-box h3{
+    font-size: 17px;
 }
 
 /* ------------------------------------------------------------------------- *
@@ -518,39 +502,68 @@ INSIDE IFRAME - LAUNCH 2035 HaCK
 /* ------------------------------------------------------------------------- *
  *  7. Responsive Design
 /* ------------------------------------------------------------------------- */
-@media screen and (max-width: 900px){
-    .visible-layers{
-        /*padding: 0px 10px 10px 0px;*/
-        /*width: auto;*/
-    }
 
-
-}
-@media screen and (max-width: 600px){
+@media screen and (min-width:768px) {
     .welcome-tag{
-        font-size: 17px;
+        font-size: 30px;
     }
     #description-box h3{
-        font-size: 17px;
+        font-size: 24px;
     }
     .add-label-items{
-        /*top:495px;*/
-        display:none;
+        color: #222222;
+        font-size: 9px;
+        position: absolute;
+        top: 505px;
+        left: 20px;
+        padding: 5px;
+        z-index: 999;
+    }
+    .add-label-items div{
+        display:inline;
     }
     #legendWrapper h4{
+        font-size: 14px;
+    }
+    #legendWrapper #legendInner, div.info.visible-layers *,
+    #legendWrapper #add-layer-dropdown, #legendWrapper li.info-text, .select2-results__option,
+    .tableTitles{
         font-size: 13px;
     }
-    #legendWrapper, #legendWrapper *, .select2-results__option,
-    .tableTitles, div.info.visible-layers * {
+
+    .glyphicon-custom{
         font-size: 10px;
     }
-
-   /* div#legendWrapper{
-        top: 1px;
-        left: 1px;
-    }*/
+    .table-results-box .dataTables_wrapper,
+    .table-results-box .dataTables_wrapper table.dataTable{
+        font-size: inherit;
+    }
+    div#legendWrapper{
+        top: 13rem;
+        left:25px;
+    }
     .visible-layers{
         display:none;
+        padding:0px 0px 10px 0px;
+        width:260px;
+    }
+    .visible-layers div {
+        font-size:12px;
+    }
+    .visible-layers #legend-layer-list div.polygon{
+        float: left;
+        margin: 3px 5px 0 10px;
+        width: 3px;
+        opacity: 0.7;
+        height: 3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        padding: 5px;
+        border: 1px solid white;
+        z-index: 1000;
     }
 
 }

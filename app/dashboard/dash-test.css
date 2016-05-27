@@ -62,17 +62,20 @@
 }
 .top-navbar div:first-child{
   padding-right:0px;
+  margin-right: -30px;
+  width: 50%;
 }
 
 .top-navbar div:nth-child(2){
   padding-right:0px;
-  padding-left:0px;
   text-align: center;
+  display: none;
 }
 
 .top-navbar div:last-child{
   padding-left:0px;
-  text-align: right;
+  margin-left: -30px;
+  width: 50%;
 }
 
 /* Sidebar navigation */
@@ -134,6 +137,7 @@
 }
 .placeholder {
   margin-bottom: 20px;
+  padding: 0px;
 }
 .placeholder img {
   display: inline-block;
@@ -174,6 +178,10 @@
   .main {
     padding-right: 40px;
     padding-left: 40px;
+  }
+  .placeholders{ /* give columns normal padding*/
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
