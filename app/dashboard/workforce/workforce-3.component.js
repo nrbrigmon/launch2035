@@ -14,7 +14,7 @@ var Workforce3Component = (function () {
     function Workforce3Component() {
         this.options = {
             chart: { type: 'bar', marginRight: 50 },
-            title: { text: 'Population Age with No High School Diploma (16-19)' },
+            title: { text: 'Population Age 16-19 with No High School Diploma' },
             subtitle: { text: "And Not Enrolled (2014)" },
             xAxis: {
                 type: 'category',
