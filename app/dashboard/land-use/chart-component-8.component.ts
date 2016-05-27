@@ -60,7 +60,7 @@ export class ChartComponent8 {
                             } else if (num >= 1000){
                               return '$'+num.slice(0,num.length-3) + 'K';
                             } else {
-                              return '$'+ this.value;
+                              return '$'+ this.y;
                             }
                         }
                     }

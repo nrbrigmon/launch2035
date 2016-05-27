@@ -253,7 +253,7 @@ var limestone_dataset = [
         "Geo": "TBD",
         "Name": "TBD",
         "Description": "TBD",
-        "Type": "Report",
+        "Type": "All",
         "Link": "TBD",
         "Year": "2016"
     }];
@@ -262,7 +262,7 @@ var morgan_dataset = [
         "Geo": "TBD",
         "Name": "TBD",
         "Description": "TBD",
-        "Type": "Report",
+        "Type": "All",
         "Link": "TBD",
         "Year": "2016"
     }];
@@ -271,7 +271,7 @@ var madison_dataset = [
         "Geo": "TBD",
         "Name": "TBD",
         "Description": "TBD",
-        "Type": "Report",
+        "Type": "All",
         "Link": "TBD",
         "Year": "2016"
     }];

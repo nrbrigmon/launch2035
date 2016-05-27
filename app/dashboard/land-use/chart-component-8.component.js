@@ -54,7 +54,7 @@ var ChartComponent8 = (function () {
                                 return '$' + num.slice(0, num.length - 3) + 'K';
                             }
                             else {
-                                return '$' + this.value;
+                                return '$' + this.y;
                             }
                         }
                     }

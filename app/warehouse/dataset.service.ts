@@ -239,7 +239,7 @@ let limestone_dataset: Array<RegionalDataset> = [
     "Geo": "TBD",
     "Name": "TBD",
     "Description": "TBD",
-    "Type": "Report",
+    "Type": "All",
     "Link": "TBD",
     "Year": "2016"
   }];
@@ -248,7 +248,7 @@ let limestone_dataset: Array<RegionalDataset> = [
       "Geo": "TBD",
       "Name": "TBD",
       "Description": "TBD",
-      "Type": "Report",
+      "Type": "All",
       "Link": "TBD",
       "Year": "2016"
     }];
@@ -257,7 +257,7 @@ let madison_dataset: Array<RegionalDataset> =[
     "Geo": "TBD",
     "Name": "TBD",
     "Description": "TBD",
-    "Type": "Report",
+    "Type": "All",
     "Link": "TBD",
     "Year": "2016"
   }];

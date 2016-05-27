@@ -518,6 +518,7 @@ INSIDE IFRAME - LAUNCH 2035 HaCK
         left: 20px;
         padding: 5px;
         z-index: 999;
+        display:block;
     }
     .add-label-items div{
         display:inline;
