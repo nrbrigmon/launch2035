@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var County5Component = (function () {
     function County5Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Median Rent' },
             subtitle: { text: "(2014)" },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
@@ -28,10 +28,12 @@ var County5Component = (function () {
                 gridLineWidth: 0
             },
             plotOptions: {
-                column: {
+                bar: {
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:,.0f}'
+                        format: '${point.y:,.0f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

@@ -23,7 +23,7 @@ export class Regional3Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Population Growth' },
             subtitle : { text : "(2014)" },
             xAxis: {
@@ -42,7 +42,9 @@ export class Regional3Component {
                     colors: ['#E84A36', '#E84A36', '#E84A36', '#E84A36', '#981B41', '#E84A36', '#E84A36'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

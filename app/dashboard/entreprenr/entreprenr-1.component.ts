@@ -23,7 +23,7 @@ export class Entre1Component {
     chart: Object;
     constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Venture Capital Investment' },
             subtitle : { text : "Per $10,000 GDP (2015)" },
             xAxis: {
@@ -42,7 +42,9 @@ export class Entre1Component {
                     colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C', '#A3D65C'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.2f}%'
+                        format: '{point.y:.2f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

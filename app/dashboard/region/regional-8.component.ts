@@ -23,7 +23,7 @@ export class Regional8Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Median House Value' },
             subtitle : { text : "(2014)" },
             xAxis: {
@@ -42,7 +42,9 @@ export class Regional8Component {
                     colors: ['#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#222222', '#4C4C4C'],
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:,.0f}'
+                        format: '${point.y:,.0f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

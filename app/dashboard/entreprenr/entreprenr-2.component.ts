@@ -23,7 +23,7 @@ export class Entre2Component {
     chart: Object;
     constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Patents' },
             subtitle : { text : "Per 10,000 Employees (2013)" },
             xAxis: {
@@ -44,7 +44,9 @@ export class Entre2Component {
                     colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

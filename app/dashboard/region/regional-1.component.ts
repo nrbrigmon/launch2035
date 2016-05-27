@@ -23,7 +23,7 @@ export class Regional1Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'GDP Growth' },
             subtitle : { text : "Current Dollars (2014)" },
             xAxis: {
@@ -42,9 +42,11 @@ export class Regional1Component {
                     colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
-                } 
+                }
             },
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',

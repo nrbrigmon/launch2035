@@ -23,7 +23,7 @@ export class Regional7Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Median Hourly Wage' },
             subtitle : { text : "(2015)" },
             xAxis: {
@@ -42,7 +42,9 @@ export class Regional7Component {
                     colors: ['#981B41', '#E84A36', '#E84A36', '#E84A36', '#E84A36', '#E84A36', '#E84A36'],
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:.2f}'
+                        format: '${point.y:.2f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

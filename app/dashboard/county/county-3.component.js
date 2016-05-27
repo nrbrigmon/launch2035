@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var County3Component = (function () {
     function County3Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Median Hourly Wage' },
             subtitle: { text: "(2015)" },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
@@ -28,10 +28,12 @@ var County3Component = (function () {
                 gridLineWidth: 0
             },
             plotOptions: {
-                column: {
+                bar: {
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:.2f}'
+                        format: '${point.y:.2f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

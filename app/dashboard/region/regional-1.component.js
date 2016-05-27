@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Regional1Component = (function () {
     function Regional1Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'GDP Growth' },
             subtitle: { text: "Current Dollars (2014)" },
             xAxis: {
@@ -32,7 +32,9 @@ var Regional1Component = (function () {
                     colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

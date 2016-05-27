@@ -13,19 +13,25 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var ChartComponent9 = (function () {
     function ChartComponent9() {
         this.options = {
+            chart: { type: 'column' },
             title: { text: 'Sales Tax Revenue' },
             subtitle: { text: 'per Acre per Year' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Year 1']
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
-                min: 0,
                 title: { text: '' },
+                gridLineWidth: 0,
                 labels: {
                     formatter: function () {
                         var num = (this.value).toString();
-                        if (num >= 1000) {
+                        if (num >= 1000000) {
+                            return '$' + num.slice(0, num.length - 6) + 'M';
+                        }
+                        else if (num >= 1000) {
                             return '$' + num.slice(0, num.length - 3) + 'K';
                         }
                         else {
@@ -34,18 +40,32 @@ var ChartComponent9 = (function () {
                     }
                 }
             },
-            chart: {
-                type: 'column'
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '${point.y:,.0f}'
+                    }
+                }
+            },
+            legend: { enabled: false },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:,.0f}</b><br/>'
             },
             series: [{
-                    name: 'Scenario 1',
-                    data: [13438]
-                }, {
-                    name: 'Scenario 2',
-                    data: [97482]
-                }, {
-                    name: 'Scenario 3',
-                    data: [246630]
+                    name: 'Revenue',
+                    colorByPoint: true,
+                    data: [{
+                            name: 'Scenario 1',
+                            y: 13438
+                        }, {
+                            name: 'Scenario 2',
+                            y: 97482
+                        }, {
+                            name: 'Scenario 3',
+                            y: 246630
+                        }]
                 }]
         };
     }

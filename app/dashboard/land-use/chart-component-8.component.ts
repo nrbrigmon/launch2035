@@ -23,15 +23,18 @@ export class ChartComponent8 {
   chart: Object;
   constructor() {
         this.options = {
+            chart: { type: 'column' },
             title : { text : 'New Total Value' },
             subtitle : { text : 'from Construction Costs' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Year 1']
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
-                min: 0,
                 title: { text: '' },
+                gridLineWidth: 0,
                 labels: {
                     formatter: function () {
                         let num = (this.value).toString();
@@ -45,18 +48,42 @@ export class ChartComponent8 {
                     }
                 }
             },
-            chart: {
-                type: 'column'
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            let num = (this.y).toString();
+                            console.log(num);
+                            if (num >= 1000000){
+                              return '$'+num.slice(0,num.length-6) + 'M';
+                            } else if (num >= 1000){
+                              return '$'+num.slice(0,num.length-3) + 'K';
+                            } else {
+                              return '$'+ this.value;
+                            }
+                        }
+                    }
+                }
+            },
+            legend: { enabled: false },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:,.0f}</b><br/>'
             },
             series: [{
-                name: 'Scenario 1',
-                data: [3370260468]
-            },{
-                name: 'Scenario 2',
-                data: [6115747316]
-            },{
-                name: 'Scenario 3',
-                data: [7956296631]
+                name: 'Value',
+                colorByPoint: true,
+                data: [{
+                    name: 'Scenario 1',
+                    y: 3370260468
+                }, {
+                    name: 'Scenario 2',
+                    y: 6115747316
+                }, {
+                    name: 'Scenario 3',
+                    y: 7956296631
+                }]
             }]
         };
     }

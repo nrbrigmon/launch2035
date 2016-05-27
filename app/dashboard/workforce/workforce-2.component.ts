@@ -23,7 +23,7 @@ export class Workforce2Component {
     chart: Object;
     constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Growth in Primary Working Age Population (25-64)' },
             subtitle : { text : "With Associate's Degree or Higher (2014)" },
             xAxis: {
@@ -44,7 +44,9 @@ export class Workforce2Component {
                     colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

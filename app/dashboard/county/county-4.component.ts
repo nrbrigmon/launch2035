@@ -23,7 +23,7 @@ export class County4Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Median House Value' },
             subtitle : { text : "(2014)" },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
@@ -38,10 +38,12 @@ export class County4Component {
                 gridLineWidth: 0
             },
             plotOptions: {
-                column: {
+                bar: {
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:,.0f}'
+                        crop: false,
+                        format: '${point.y:,.0f}',
+                        overflow: "none"
                     }
                 }
             },

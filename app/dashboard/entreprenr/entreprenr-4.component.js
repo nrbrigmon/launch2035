@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Entre4Component = (function () {
     function Entre4Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Employment at New/Young Firms (<5 Yrs)' },
             subtitle: { text: "As Share of Total Employment (2013)" },
             xAxis: {
@@ -32,7 +32,9 @@ var Entre4Component = (function () {
                     colors: ['#4C4C4C', '#4C4C4C', '#222222', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

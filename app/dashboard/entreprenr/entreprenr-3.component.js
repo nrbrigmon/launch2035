@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Entre3Component = (function () {
     function Entre3Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'New/Young Firms (<5 Yrs)' },
             subtitle: { text: "Per 1,000 Population (2013)" },
             xAxis: {
@@ -32,7 +32,9 @@ var Entre3Component = (function () {
                     colors: ['#E84A36', '#E84A36', '#E84A36', '#E84A36', '#981B41', '#E84A36', '#E84A36'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

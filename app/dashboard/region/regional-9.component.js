@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Regional9Component = (function () {
     function Regional9Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Median Rent' },
             subtitle: { text: "(2014)" },
             xAxis: {
@@ -32,7 +32,9 @@ var Regional9Component = (function () {
                     colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F'],
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:,.0f}'
+                        format: '${point.y:,.0f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

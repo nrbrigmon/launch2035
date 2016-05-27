@@ -23,14 +23,16 @@ export class ChartComponent7 {
   chart: Object;
   constructor() {
         this.options = {
+            chart: { type: 'column' },
             title : { text : 'Property Tax Revenue' },
             subtitle : { text : 'per Acre per Year' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Year 1']
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
-                min: 0,
                 title: { text: '' },
                 labels: {
                     formatter: function () {
@@ -41,20 +43,35 @@ export class ChartComponent7 {
                           return '$'+ this.value;
                         }
                     }
+                },
+                gridLineWidth: 0
+            },
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '${point.y:,.0f}'
+                    }
                 }
             },
-            chart: {
-                type: 'column'
+            legend: { enabled: false },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:,.0f}</b><br/>'
             },
             series: [{
-                name: 'Scenario 1',
-                data: [1669]
-            },{
-                name: 'Scenario 2',
-                data: [8901]
-            },{
-                name: 'Scenario 3',
-                data: [21735]
+                name: 'Revenue',
+                colorByPoint: true,
+                data: [{
+                    name: 'Scenario 1',
+                    y: 1669
+                }, {
+                    name: 'Scenario 2',
+                    y: 8901
+                }, {
+                    name: 'Scenario 3',
+                    y: 21735
+                }]
             }]
         };
     }

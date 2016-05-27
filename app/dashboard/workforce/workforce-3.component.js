@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Workforce3Component = (function () {
     function Workforce3Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Population Age with No High School Diploma (16-19)' },
             subtitle: { text: "And Not Enrolled (2014)" },
             xAxis: {
@@ -32,7 +32,9 @@ var Workforce3Component = (function () {
                     colors: ['#E84A36', '#E84A36', '#E84A36', '#981B41', '#E84A36', '#E84A36', '#E84A36'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

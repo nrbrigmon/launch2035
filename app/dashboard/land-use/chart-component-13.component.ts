@@ -23,28 +23,45 @@ export class ChartComponent13 {
   chart: Object;
   constructor() {
         this.options = {
+            chart: { type: 'column' },
             title : { text : 'CO2 Emissions' },
             subtitle : { text : 'Parts per Million' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Year 1']
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
-                min: 0,
+                gridLineWidth: 0,
                 title: { text: 'Tons/Yr' }
             },
-            chart: {
-                type: 'column'
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.y:,.1f}'
+                    }
+                }
+            },
+            legend: { enabled: false },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:,.1f}</b><br/>'
             },
             series: [{
-                name: 'Scenario 1',
-                data: [3.1]
-            },{
-                name: 'Scenario 2',
-                data: [3.2]
-            },{
-                name: 'Scenario 3',
-                data: [3.3]
+                name: 'Tons/Yr',
+                colorByPoint: true,
+                data: [{
+                    name: 'Scenario 1',
+                    y: 3.1
+                }, {
+                    name: 'Scenario 2',
+                    y: 3.2
+                }, {
+                    name: 'Scenario 3',
+                    y: 3.3
+                }]
             }]
         };
     }

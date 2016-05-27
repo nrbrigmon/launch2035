@@ -23,28 +23,45 @@ export class ChartComponent15 {
   chart: Object;
   constructor() {
         this.options = {
+            chart: { type: 'column' },
             title : { text : 'New Road Lane Miles' },
             subtitle : { text : '' },
             colors: ['#005C83', '#E84A36', '#A3D65C', '#4C4C4C', '#222222'],
             xAxis: {
-                categories: ['Year 1']
+                type: 'category',
+                title: { text: null },
+                gridLineWidth: 0
             },
             yAxis: {
-                min: 0,
+                gridLineWidth: 0,
                 title: { text: 'Miles' }
             },
-            chart: {
-                type: 'column'
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.y:,.2f}'
+                    }
+                }
+            },
+            legend: { enabled: false },
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:,.2f}</b><br/>'
             },
             series: [{
-                name: 'Scenario 1',
-                data: [383.47]
-            },{
-                name: 'Scenario 2',
-                data: [338.09]
-            },{
-                name: 'Scenario 3',
-                data: [181.4]
+                name: 'Miles',
+                colorByPoint: true,
+                data: [{
+                    name: 'Scenario 1',
+                    y: 383.47
+                }, {
+                    name: 'Scenario 2',
+                    y: 338.09
+                }, {
+                    name: 'Scenario 3',
+                    y: 181.40
+                }]
             }]
         };
     }

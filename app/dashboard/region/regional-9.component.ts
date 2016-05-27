@@ -23,7 +23,7 @@ export class Regional9Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Median Rent' },
             subtitle : { text : "(2014)" },
             xAxis: {
@@ -42,7 +42,9 @@ export class Regional9Component {
                     colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F'],
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:,.0f}'
+                        format: '${point.y:,.0f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

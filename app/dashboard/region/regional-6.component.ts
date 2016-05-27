@@ -23,7 +23,7 @@ export class Regional6Component {
   chart: Object;
   constructor() {
         this.options = {
-            chart:  { type: 'bar' },
+            chart:  { type: 'bar', marginRight: 50 },
             title : { text : 'Unemployment Rate' },
             subtitle : { text : "Not seasonally adjusted (March 2016)" },
             xAxis: {
@@ -42,7 +42,9 @@ export class Regional6Component {
                     colors: ['#005C83', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

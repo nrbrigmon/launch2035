@@ -83,18 +83,12 @@
       System.config({
         defaultJSExtensions: true,
         packages: {
-            'app': { format: 'register', defaultExtension: 'js' },
-            'angular2-highcharts' : {
-              main: 'index',
-              format: 'cjs',
-              defaultExtension: 'js',
-            }
-          },
-        //map tells the System loader where to look for things
-        map: {
-          'angular2-highcharts': 'https://cdn.rawgit.com/gevgeny/angular2-highcharts/master/dist',
-          'highcharts/highstock.src': 'https://cdn.rawgit.com/highcharts/highcharts-dist/v4.2.1/highstock.js'
+            'app': { format: 'register', defaultExtension: 'js' }
         }
+        //map tells the System loader where to look for things
+        // map: {
+        //   'highcharts/highstock.src': 'node_modules/angular2-highcharts/node_modules/highcharts/highstock.js'
+        // }
       });
       System.import('main')
             .then(null, console.error.bind(console));

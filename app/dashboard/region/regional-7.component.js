@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Regional7Component = (function () {
     function Regional7Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Median Hourly Wage' },
             subtitle: { text: "(2015)" },
             xAxis: {
@@ -32,7 +32,9 @@ var Regional7Component = (function () {
                     colors: ['#981B41', '#E84A36', '#E84A36', '#E84A36', '#E84A36', '#E84A36', '#E84A36'],
                     dataLabels: {
                         enabled: true,
-                        format: '${point.y:.2f}'
+                        format: '${point.y:.2f}',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },

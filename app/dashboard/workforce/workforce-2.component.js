@@ -13,7 +13,7 @@ var angular2_highcharts_1 = require('angular2-highcharts');
 var Workforce2Component = (function () {
     function Workforce2Component() {
         this.options = {
-            chart: { type: 'bar' },
+            chart: { type: 'bar', marginRight: 50 },
             title: { text: 'Growth in Primary Working Age Population (25-64)' },
             subtitle: { text: "With Associate's Degree or Higher (2014)" },
             xAxis: {
@@ -34,7 +34,9 @@ var Workforce2Component = (function () {
                     colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%'
+                        format: '{point.y:.1f}%',
+                        crop: false,
+                        overflow: "none"
                     }
                 }
             },
