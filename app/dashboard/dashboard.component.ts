@@ -48,8 +48,8 @@ import 'rxjs/add/operator/map';
 })
 
 export class DashboardComponent {
-  category:string = 'Home'; //category will help set the HTML template directive
-  cObj:string = 'Home';  //cObj will help set an active class for the navbar
+  category:string = ''; //category will help set the HTML template directive
+  cObj:string = '';  //cObj will help set an active class for the navbar
   constructor(public el: ElementRef, public renderer: Renderer){
     this.clickedOutside = this.clickedOutside.bind(this);
   }

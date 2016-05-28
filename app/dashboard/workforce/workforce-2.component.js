@@ -14,7 +14,7 @@ var Workforce2Component = (function () {
     function Workforce2Component() {
         this.options = {
             chart: { type: 'bar', marginRight: 50 },
-            title: { text: 'Growth in Primary Working Age Population (25-64)' },
+            title: { text: 'Growth in Primary Working Age Population 25-64' },
             subtitle: { text: "With Associate's Degree or Higher (2014)" },
             xAxis: {
                 type: 'category',

@@ -52,8 +52,8 @@ var DashboardComponent = (function () {
     function DashboardComponent(el, renderer) {
         this.el = el;
         this.renderer = renderer;
-        this.category = 'Home'; //category will help set the HTML template directive
-        this.cObj = 'Home'; //cObj will help set an active class for the navbar
+        this.category = ''; //category will help set the HTML template directive
+        this.cObj = ''; //cObj will help set an active class for the navbar
         this.clickedOutside = this.clickedOutside.bind(this);
     }
     DashboardComponent.prototype.setCategory = function (_val) {
