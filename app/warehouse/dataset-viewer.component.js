@@ -21,8 +21,9 @@ var DatasetViewerComponent = (function () {
         this._selection = s;
         this.bObj = s;
     };
-    DatasetViewerComponent.prototype.onDownloadClick = function () {
-        alert("Your download will start shortly... in theory");
+    DatasetViewerComponent.prototype.onDownloadClick = function (file) {
+        console.log(file.Link);
+        window.open(file.Link);
     };
     DatasetViewerComponent = __decorate([
         core_1.Component({

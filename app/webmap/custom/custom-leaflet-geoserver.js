@@ -210,7 +210,7 @@ var globalhead, globalfoot;
         "MPO_TAZ_05162016_WGS1984": "<div class='polygon-group' name='MPO_TAZ_05162016_WGS1984'>" +
             " <div class='polygon polygon-MPOFull'></div>Regional TAZs" + "</div>",
         "Northern_AL_Watersheds_05162016": "<div class='polygon-group' name='Northern_AL_Watersheds_05162016'>"+
-            "<div class='polygon polygon-watersheds'></div>Watersheds</div>",
+            "<div class='polygon polygon-watersheds'></div>Wheeler Lake Watershed</div>",
         "Regional_Ecoregions": "<div class='polygon-group' name='Regional_Ecoregions'>"+
             "<div class='polygon polygon-ecoregionA'></div>Cumberland Plateau<br>" +
             "<div class='polygon polygon-ecoregionD'></div>Dissected Plateau<br>" +

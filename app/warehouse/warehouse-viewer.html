@@ -23,7 +23,7 @@
   <p *ngIf="filenameFilter.value.length >= 1" class="search-term">Filtering by <b>{{filenameFilter.value}}</b></p>
   <ul class="data-columns">
       <li *ngFor="let file of geography | fileNamePipe:filenameFilter.value | fileTypePipe:_selection">
-         <div class="media btn btn-block" (click)="onDownloadClick()">
+         <div class="media btn btn-block" (click)="onDownloadClick(file)">
           <div class="media-left">
             <img class="media-object" src='img/{{file.Type}}.png'  alt="{{file.Type}}">
           </div>
