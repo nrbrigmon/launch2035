@@ -32,7 +32,7 @@ var Entre1Component = (function () {
                     colors: ['#A3D65C', '#A3D65C', '#A3D65C', '#A3D65C', '#44A13F', '#A3D65C', '#A3D65C'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.2f}%',
+                        format: '${point.y:.2f}',
                         crop: false,
                         overflow: "none"
                     }
@@ -40,7 +40,7 @@ var Entre1Component = (function () {
             },
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b><br/>'
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>${point.y:.2f}</b><br/>'
             },
             series: [{
                     name: 'Investment',

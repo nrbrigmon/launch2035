@@ -42,7 +42,7 @@ export class Entre4Component {
                     colors: ['#4C4C4C', '#4C4C4C', '#222222', '#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%',
+                        format: '{point.y:.1f}',
                         crop: false,
                         overflow: "none"
                     }
@@ -50,7 +50,7 @@ export class Entre4Component {
             },
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}</b><br/>'
             },
             series: [{
                   name: 'Share',

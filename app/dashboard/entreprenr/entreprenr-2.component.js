@@ -34,7 +34,7 @@ var Entre2Component = (function () {
                     colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%',
+                        format: '{point.y:.1f}',
                         crop: false,
                         overflow: "none"
                     }
@@ -42,7 +42,7 @@ var Entre2Component = (function () {
             },
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}</b><br/>'
             },
             series: [{
                     name: 'Patents per 1K',

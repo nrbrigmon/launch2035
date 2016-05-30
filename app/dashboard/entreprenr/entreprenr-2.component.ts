@@ -44,7 +44,7 @@ export class Entre2Component {
                     colors: ['#5F9CB6', '#5F9CB6', '#5F9CB6', '#5F9CB6', '#005C83', '#5F9CB6', '#5F9CB6'],
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y:.1f}%',
+                        format: '{point.y:.1f}',
                         crop: false,
                         overflow: "none"
                     }
@@ -52,7 +52,7 @@ export class Entre2Component {
             },
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}%</b><br/>'
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}</b><br/>'
             },
             series: [{
                   name: 'Patents per 1K',
